@@ -1,0 +1,19 @@
+sv:
+  work_posts:
+    dropdown_filters:
+      filter_found: Hittade %{count} st
+      reset_filter: Rensa filtrering
+      show_all: Alla
+
+    info:
+      title: Information
+
+    preview:
+      show_work_post: Visa jobbpost
+
+    index:
+      title: Jobbportal
+
+    show:
+      back_to_posts: Visa alla poster
+      edit_post: Redigera jobbpost

@@ -1,0 +1,43 @@
+<div class="headline">
+  <h1><%= title(models_name(Event)) %></h1>
+</div>
+
+<div class="col-md-3 col-sm-12 ">
+  <%= render('/admin/events/sidebar', current: :index) %>
+  <button class="wg-external-submit-button btn primary" data-grid-name="grid">
+    <%= t('wice_grid.filter') %>
+  </button>
+
+  <button class="wg-external-reset-button btn secondary" data-grid-name="grid">
+    <%= t('wice_grid.reset_filter') %>
+  </button>
+</div>
+
+<div class="col-md-9 col-sm-12">
+  <%= grid(@event_grid, hide_submit_button: true, hide_reset_button: true) do |g|
+    g.column(name: Event.human_attribute_name(:title), attribute: 'title', assoc: :translations) do |event|
+      link_to(event, event_path(event))
+    end
+    g.column(name: Event.human_attribute_name(:location), attribute: 'location', assoc: :translations) do |event|
+      event.location.try(:truncate, 20)
+    end
+    g.column(name: Event.human_attribute_name(:starts_at), attribute: 'starts_at') do |event|
+      localized(event.starts_at)
+    end
+    g.column(name: Event.human_attribute_name(:ends_at), attribute: 'ends_at') do |event|
+      localized(event.ends_at)
+    end
+    g.column(name: Event.human_attribute_name(:event_signup),
+             assoc: :event_signup, attribute: 'opens',
+             filter: false) do |event|
+      yes_no(event.signup.present?)
+    end
+    g.column(name: Event.human_attribute_name(:updated_at), attribute: 'updated_at',
+            filter: false) do |event|
+      localized(event.updated_at)
+    end
+    g.column(name: t('global.edit')) do |event|
+      link_to(t('global.edit'), edit_admin_event_path(event))
+    end
+  end -%>
+</div>

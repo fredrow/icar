@@ -1,0 +1,36 @@
+<% if events.any? %>
+  <div class="event stream box">
+    <div class="headline">
+      <h3><%= link_to(t('.coming_events'), calendars_path) %></h3>
+    </div>
+
+    <table class="table">
+      <% events.group_by(&:day).each do |day, ev| %>
+        <tr>
+          <td class="weekday">
+            <% if day.day == Time.zone.now.day %>
+              <%= t('.today').capitalize %>:
+            <% else %>
+              <%= l(day, format: '%A').capitalize %>:
+            <% end %>
+          </td>
+          <td colspan=4>
+            <% ev.each do |e| %>
+              <div class="event-wrap">
+                <% unless e.all_day %>
+                  <span class='date'>
+                    <%= l(e.starts_at, format: :time) %>
+                  </span>
+                <% end %>
+                <span class='title'>
+                  <%= link_to(e.short_title.truncate(30), event_path(e)) %>
+                </span>
+                <%= event_signup_status(e) %>
+              </div>
+            <% end %>
+          </td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+<% end %>

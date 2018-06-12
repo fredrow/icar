@@ -1,0 +1,41 @@
+<%= form.input :starts_at, as: :datetime_picker, wrapper_html: {class: 'inline half'} %>
+<%= form.input :ends_at, as: :datetime_picker, wrapper_html: {class: 'inline half'} %>
+<%= form.input :all_day, as: :boolean, wrapper_html: {class: 'inline half'} %>
+<%= form.input :dot, collection: [[t('model.event.without_dot'), Event::WITHOUT],
+                                  [t('model.event.single_dot'), Event::SINGLE],
+                                  [t('model.event.double_dot'), Event::DOUBLE]],
+                     input_html: {class: 'select2'},
+                     hint: t('.dot_hint') %>
+<%= form.input :location_sv, collection: Event.locations_sv,
+                             include_blank: false,
+                             input_html: {class: 'select2_tags'} %>
+<%= form.input :location_en, collection: Event.locations_en,
+                             include_blank: false,
+                             input_html: {class: 'select2_tags'} %>
+
+<% if event.image.present? %>
+  <%= image_tag(event.thumb, class: 'img-responsive') %>
+  <br>
+  <%= link_to(t('.remove_image'), admin_event_path(event, event: {remove_image: '1'}),
+                                       method: :patch,
+                                       data: {confirm: t('.confirm_image_removal')},
+                                       class: 'btn secondary') %>
+<% end %>
+
+<%= form.input :image, as: :file %>
+<%= form.association :council, collection: Council.by_title,
+                               input_html: {class: 'select2'} %>
+<% if event.persisted? %>
+  <%= form.association :categories, collection: Category.by_title.for_use_case('Event'),
+                                    input_html: {class: 'select2'} %>
+<% else %>
+  <%= simple_format(t('.categories_after_save')) %>
+<% end %>
+
+<%= form.input :drink, as: :boolean, wrapper_html: {class: 'inline third'} %>
+<%= form.input :food, as: :boolean, wrapper_html: {class: 'inline third'} %>
+<%= form.input :cash, as: :boolean, wrapper_html: {class: 'inline third'} %>
+<%= form.input :price, hint: t('.price_hint') %>
+
+<%= link_to('Ändra texter', '#texts', data: {toggle: :tab}, class: 'btn secondary') %>
+<%= form.button :submit %>

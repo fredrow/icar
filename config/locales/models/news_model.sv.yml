@@ -1,0 +1,25 @@
+sv:
+  model:
+    news:
+      pinned_dates_error: slutdatum måste vara efter startdatum.
+  activerecord:
+    models:
+      news:
+        one: Nyhet
+        other: Nyheter
+    attributes:
+      news:
+        categories: Kategorier
+        content: Text
+        content_sv: Text - svensk
+        content_en: Text - engelsk
+        created_at: Skapad
+        image: Bild
+        remove_image: Ta bort bild
+        title: Titel
+        title_sv: Titel - svensk
+        title_en: Titel - engelsk
+        updated_at: Uppdaterad
+        user: Upplagd av
+        pinned_from: Fastnålad från
+        pinned_to: Fastnålad till

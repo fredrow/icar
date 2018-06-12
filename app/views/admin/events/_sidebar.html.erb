@@ -1,0 +1,68 @@
+<% event ||= nil %>
+<ul class="list-group sidebar-nav">
+  <li class="<%= active_list_group(:index, current) %>">
+    <%= link_to(admin_events_path) do %>
+      <%= fa_icon('list', text: t('.index')) %>
+    <% end %>
+  </li>
+
+  <li class="<%= active_list_group(:calendar, current) %>">
+    <%= link_to(calendars_path) do %>
+      <%= fa_icon('calendar', text: t('.calendar')) %>
+    <% end %>
+  </li>
+
+  <% if event.nil? %>
+    <li class="<%= active_list_group(:new_event, current) %>">
+      <%= link_to(new_admin_event_path) do %>
+        <%= fa_icon('plus', text: t('.new_event')) %>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
+
+<% if event %>
+  <ul class="list-group sidebar-nav">
+    <li class="<%= active_list_group(:event_texts, current) %>">
+      <%= link_to('#texts', data: { toggle: :tab }) do %>
+        <%= fa_icon('file-text', text: t('.texts')) %>
+      <% end %>
+    </li>
+
+    <li class="<%= active_list_group(:event_dates, current) %>">
+      <%= link_to('#dates', data: { toggle: :tab }) do %>
+        <%= fa_icon('calendar', text: t('.dates')) %>
+      <% end %>
+    </li>
+  </ul>
+<% end %>
+
+<% if event && event.persisted? %>
+  <div class="headline">
+    <h2><%= t('.signup') %></h2>
+  </div>
+
+  <ul class="list-group sidebar-nav">
+    <li class="list-group-item">
+      <%= link_to(admin_event_signup_path(event, tab: :settings),
+                                          data: {confirm: t('.save_before')}) do %>
+        <%= fa_icon('wrench', text: t('.settings')) %>
+      <% end %>
+    </li>
+
+    <% if event.signup.try(:persisted?) %>
+      <li class="list-group-item">
+        <%= link_to(admin_event_signup_path(event, tab: :attendees),
+                                            data: {confirm: t('.save_before')}) do %>
+          <%= fa_icon('users', text: t('.attendees')) %>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+
+  <%= link_to(t('.destroy'), admin_event_path(event),
+                             class: 'btn danger',
+                             method: :delete,
+                             data: { confirm: t('.destroy_confirmation') }) %>
+<% end %>
+

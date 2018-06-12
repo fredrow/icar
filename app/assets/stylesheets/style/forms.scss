@@ -1,0 +1,25 @@
+.form-control {
+  box-shadow: none;
+
+  &:focus {
+    border-color: $unify-orange;
+    box-shadow: none;
+  }
+}
+
+.form-spacing .form-control {
+  margin-bottom: 15px;
+}
+
+.inline {
+  display: inline-block;
+  vertical-align: top;
+
+  &.half {
+    width: 49.5%;
+  }
+
+  &.third {
+    width: 32.7%;
+  }
+}

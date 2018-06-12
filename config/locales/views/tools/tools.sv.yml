@@ -1,0 +1,19 @@
+sv:
+  tools:
+    index:
+      description: Behöver du verktyg för att skruva ihop nya möbler? Sektionen har en uppsjö av verktyg för utlåning till medlemmar.
+      free: Lediga verktyg
+      keywords:
+        - verktyg
+        - slagborr
+        - borrhammare
+        - ikeamöbler
+        - betongvägg
+
+      title: Sektionens verktyg
+
+    show:
+      free: Lediga verktyg
+      rented: Lånade
+      return_date: Retur
+      title: Sektionens verktyg

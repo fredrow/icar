@@ -1,0 +1,49 @@
+<% description(election_meta_description(@election_view.election)) %>
+<% keywords(t('.keywords')) %>
+
+<div class="headline">
+  <h1 id="election-title"><%= title(@election_view.election.to_s) %></h1>
+</div>
+
+<div class="col-md-3 col-sm-12 election">
+  <%= render 'countdown', election_view: @election_view %>
+
+  <hr>
+
+  <%= link_to(model_name(Candidate), candidates_path, class: 'btn primary') %>
+  <%= link_to(model_name(Nomination), new_nominations_path, class: 'btn primary') %><br>
+
+  <% if can_administrate?(:edit, @election_view.election) %>
+    <hr>
+    <%= link_to(t('.edit_election'), admin_election_path(@election_view.election),
+                class: 'btn primary') %>
+    <hr>
+  <% end %>
+</div>
+
+<div class="col-md-9 col-sm-12 election">
+  <% if @election_view.election.description.present? %>
+    <div class="col-sm-12">
+      <%= markdown(@election_view.election.description) %>
+      <p>
+        <strong><%= t('.highlights') %></strong>
+      </p>
+      <ul class="list">
+        <li><%= t('.star_posts') %></li>
+        <li><strong>(X)</strong> <%= t('.x_posts') %></li>
+        <li><%= t('.orange_posts') %></li>
+        <li><%= t('.green_posts') %></li>
+      </ul>
+    </div>
+  <% end %>
+</div>
+
+<div class="col-md-12 col-sm-12 election">
+  <h3><%= @election_view.posts_text %></h3>
+  <%= render 'posttab', election_view: @election_view, post_grid: @election_view.grid %>
+
+  <h3><%= @election_view.rest_posts_text %></h3>
+  <%= render 'posttab', election_view: @election_view, post_grid: @election_view.rest_grid %>
+  <div class="display-post" id="views"></div>
+</div>
+<%= render '/posts/modal' %>

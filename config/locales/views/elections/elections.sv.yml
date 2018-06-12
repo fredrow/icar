@@ -1,0 +1,25 @@
+sv:
+  elections:
+    countdown:
+      days: dagar
+      date_format: "%D dagar %H:%M:%S"
+
+    index:
+      description: Val på F-sektionen är då funktionärer och förtroendevalda blir valda. Se vilka poster som finns och sök idag.
+      edit_election: Redigera val
+      green_posts: Grönfärgade poster väljs av studierådet.
+      keywords:
+        - engagera
+        - sektionsval
+        - funktionär
+        - terminsmöte
+        - val
+        - post
+      highlights: Vad betyder färger och markeringar?
+      orange_posts: Orangefärgade poster är nämnd- eller styrelseposter.
+      star_posts: Poster markerade med * har inte något rekommenderat antal.
+      x_posts: anger exakt maximalt antal.
+
+    no_election:
+      no_information: Just nu finns det ingen information om valet.
+      to_root: Tillbaka till start

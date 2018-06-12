@@ -1,0 +1,143 @@
+.event {
+  &.stream {
+    margin-bottom: 20px;
+
+    .table {
+      table-layout: fixed;
+      margin-bottom: 5px;
+      width: 100%;
+
+      td,
+      th {
+        border: none;
+      }
+
+      tbody > tr > td {
+        padding: 4px;
+      }
+    }
+
+    .headline {
+      a,
+      a:link,
+      a:visited {
+        color: $gray-text;
+      }
+
+      a:hover {
+        color: $fsek-pi-silver;
+        text-decoration: none;
+      }
+    }
+
+    .weekday {
+      color: $gray-headline;
+      font-weight: bold;
+      padding-right: 10px;
+    }
+
+    .event-wrap {
+      color: $black;
+      display: block;
+
+      .date,
+      .title {
+        color: $black;
+      }
+
+      .open {
+        color: $unify-green;
+      }
+
+      .closed {
+        color: $unify-red;
+      }
+
+      .future {
+        color: $medium-gray-text;
+      }
+    }
+  }
+
+  &.attending {
+    color: $unify-green;
+  }
+
+  &.reserve {
+    color: $unify-red;
+  }
+
+  &.not-attending {
+    color: $unify-red;
+  }
+
+  &.registered {
+    color: $fsek-orange;
+  }
+
+  &.block {
+    display: block;
+  }
+
+  &.time,
+  &.location {
+    display: inline-block;
+    padding-right: 10px;
+  }
+
+  &.event-description {
+    font-size: 1.2em;
+  }
+
+  &.info {
+    display: block;
+
+    ul {
+      padding: 0;
+
+      li {
+        color: $black;
+        list-style-type: none;
+      }
+    }
+  }
+
+  &.not-registered {
+    color: $unify-red;
+    font-size: 1.2em;
+
+    a {
+      margin-left: 10px;
+    }
+  }
+}
+
+.event-error::before {
+  border-radius: 8px;
+  color: $boot-danger;
+  content: "\f12a";
+  font-family: FontAwesome;
+  font-size: 20px;
+  height: 16px;
+  left: 0;
+  margin-left: -20px;
+  margin-top: -5px;
+  position: absolute;
+  width: 16px;
+}
+
+@media(max-width: 400px) {
+  .event {
+    .event-wrap {
+      padding-left: 25px;
+    }
+  }
+}
+
+@media(max-width: 1200px) {
+  .event {
+    .event-wrap {
+      margin-left: 15px;
+    }
+  }
+}

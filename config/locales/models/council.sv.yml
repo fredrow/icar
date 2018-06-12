@@ -1,0 +1,14 @@
+sv:
+  activerecord:
+    models:
+      council: Utskott
+    attributes:
+      council:
+        created_at: Skapades
+        description: Beskrivning
+        president: Ordförande
+        title: Titel
+        title_sv: Titel - svensk
+        title_en: Titel - engelsk
+        updated_at: Uppdaterades
+        url: Url

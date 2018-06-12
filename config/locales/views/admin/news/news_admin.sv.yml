@@ -1,0 +1,28 @@
+sv:
+  admin:
+    news:
+      form:
+        categories_after_save: Kategorier kan läggas till efter att nyheten sparas.
+        confirm_image_removal: Vill du verkligen ta bort bilden? Ändringar i formuläret kommer inte att sparas.
+        destroy: Förinta nyhet
+        remove_image: Ta bort bild
+
+      edit:
+        admin_index: Administrera nyheter
+        all_news: Alla nyheter
+        show: Visa nyhet
+        title: Redigera nyhet
+
+      index:
+        all_news: Alla nyheter
+        new_news: Ny nyhet
+        title: Administrera nyheter
+
+      new:
+        all_news: Alla nyheter
+        title: Ny nyhet
+
+      sidebar:
+        all_news: Alla nyheter
+        edit: Redigera nyhet
+        new: Ny nyhet

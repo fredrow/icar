@@ -1,0 +1,50 @@
+sv:
+  model:
+    event:
+      attending: Anmälda
+      reserves: Reserver
+      without_dot: Utan minut eller prick
+      single_dot: Prick (.)
+      double_dot: Prick-prick (..)
+      dress_codes:
+        dark_suit: Mörk kostym
+        formal: Kavaj
+        overall: Overall
+        theme: Temaenligt
+        white_tie: Frack/Högtidsklädsel M.A.O.
+
+  activerecord:
+    models:
+      event: Evenemang
+    attributes:
+      event:
+        all_day: Heldag
+        cash: Kostar pengar
+        categories: Kategorier
+        council: Utskott
+        contact: Kontakt / eventansvarig
+        created_at: Skapat
+        description: Beskrivning
+        description_en: Beskrivning - engelsk
+        description_sv: Beskrivning - svensk
+        dot: Prickar
+        dress_code: Klädkod
+        drink: Alkohol
+        ends_at: Slutar
+        event_signup: Anmälan
+        food: Mat
+        image: Bild
+        location: Plats
+        location_en: Plats - engelsk
+        location_sv: Plats - svensk
+        price: Pris
+        question: Fråga
+        remove_image: Förinta bild
+        short: Kort titel
+        short_en: Kort titel - engelsk
+        short_sv: Kort titel - svensk
+        starts_at: Startar
+        title: Titel
+        title_en: Titel - engelsk
+        title_sv: Titel - svensk
+        updated_at: Uppdaterat

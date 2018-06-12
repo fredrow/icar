@@ -1,0 +1,18 @@
+sv:
+  groups:
+    index:
+      title: Faddergrupper
+
+    show:
+      adventures: Äventyr
+      members: Medlemmar
+      messages: Meddelanden
+      all_messages: Alla meddelanden
+      new_message: Nytt meddelande
+
+    edit:
+      back: Tillbaka
+      title: Redigera Medlemmar
+
+    introduction_list:
+      other: Andra nollningar

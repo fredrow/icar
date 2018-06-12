@@ -1,0 +1,69 @@
+<%= content_for :event_info do %>
+  <div class="col-md-12 box margin-bottom-10">
+    <div class="headline">
+      <h1> <%= title(@event.to_s) %> </h1>
+    </div>
+
+    <span class="event time">
+      <%= fa_icon('calendar') %>
+      <%= time_range(@event.starts_at, @event.ends_at, format: :long, dot: @event.dot) %>
+    </span>
+
+    <span class="event location">
+      <%= fa_icon('map-marker') %>
+      <%= @event.location %>
+    </span>
+
+    <div class="event event-description">
+        <%= markdown(@event.description) %>
+    </div>
+
+    <% if @event.dress_code.present? %>
+      <div class="event">
+        <b><%= "#{Event.human_attribute_name('dress_code')}: #{dress_codes(@event)}" %></b>
+      </div>
+    <% end %>
+
+    <% if @event.price.present? %>
+      <div class="event">
+        <b><%= "#{Event.human_attribute_name('price')}: #{@event.price} kr" %></b>
+      </div>
+    <% end %>
+
+    <% if @event.contact.present? %>
+      <div class="event">
+        <br>
+        <%= t('.contact_info') %><br>
+        <%= contact_link(@event.contact) %>
+      </div>
+    <% end %>
+
+    <hr>
+
+    <%= render 'info', event: @event %>
+  </div>
+<% end %>
+
+<% if @event.image.present? %>
+  <div class="col-md-8 col-xs-12">
+    <%= yield :event_info %>
+  </div>
+  <div class="col-md-4 col-xs-12">
+    <%= image_tag(@event.large, class: 'img-responsive event-image') %>
+  </div>
+<% else %>
+  <%= yield :event_info %>
+<% end %>
+
+<% if @event.signup.present? %>
+  <div class="col-md-12 col-xs-12 box margin-bottom-20" id="registration">
+    <%= render '/events/registration', event: @event, event_user: @event_user %>
+  </div>
+<% end %>
+
+<% if can_administrate?([:index, :edit], @event) %>
+  <div class="col-md-12 col-xs-12">
+    <%= link_to(t('.edit_event'), edit_admin_event_path(@event), class: 'btn primary') %>
+    <%= link_to(t('.all_events'), admin_events_path, class: 'btn secondary') %>
+</div>
+<% end %>

@@ -1,0 +1,35 @@
+sv:
+  admin:
+    elections:
+      candidates:
+        edit_election: Redigera val
+
+      edit:
+        all_elections: Visa alla val
+        edit: Redigera val
+        show_election: Visa val
+        title: Redigera val - texter
+
+      form:
+        confirm_destroy: Valet raderas och kan inte återställas, är du säker?
+        destroy: Förinta val
+        edit_texts: Redigera texter
+        semester_hint_for_other: Om det ej är ett ordinarie val väljs Termin - Annat, efter att valet sparats kan poster läggas till.
+
+      index:
+        new_election: Nytt val
+        show_election: Visa val
+        title: Administrera val
+
+      new:
+        title: Nytt val
+        all_elections: Alla val
+
+      nominations:
+        back_to_election: Tillbaka till valet
+
+      show:
+        title: Redigera val
+        show_election: Visa val
+        show_nominations: Visa nomineringar
+        show_candidates: Visa kandidaturer

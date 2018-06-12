@@ -1,0 +1,21 @@
+sv:
+  admin:
+    users:
+      index:
+        confirm: Bekräfta
+        edit: Redigera kontouppgifter
+        email_confirmed: Din e-postadress är bekräftad.
+        make_member: Ge medlemskap
+        member: Medlem
+        membership?: Medlemskap
+        unmake_member: Ta bort medlemskap
+        title: Administrera användare
+
+      member:
+        unmake_member: Ta bort medlemskap
+
+      unmember:
+        make_member: Ge medlemskap
+
+      edit:
+        title: Redigera användare

@@ -1,0 +1,44 @@
+<% description(t('.description')) %>
+<% keywords(t('.keywords')) %>
+<%= content_for :pre_content do %>
+  <div class="carousel slide carousel-v1 margin-bottom-10 margin-top-20" id="myCarousel-1">
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="start-background">
+          <div class="container">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
+
+<div class="col-md-7 col-sm-12 col-xs-12 left">
+  <% if @start_page.election_view.present? %>
+    <%= render 'countdown', election_view: @start_page.election_view %>
+  <% end %>
+
+  <% cache_unless(can_administrate?(:manage, News), [@start_page.pinned, I18n.locale]) do %>
+    <% @start_page.pinned.each do |news| %>
+      <%= render 'news/news', news: news, pinned: true %>
+    <% end %>
+  <% end %>
+
+  <% cache_unless(can_administrate?(:manage, News), [@start_page.news, I18n.locale]) do %>
+    <% @start_page.news.each do |news| %>
+      <%= render 'news/news', news: news, pinned: false %>
+    <% end %>
+
+    <%= link_to news_index_path do%>
+      <%= fa_icon('plus') %> <%= t('.more_news') %>
+    <% end %>
+  <% end %>
+</div>
+
+<div class="col-md-5 col-sm-12 col-xs-12 start-page right">
+  <% cache([@start_page.events, I18n.locale]) do %>
+    <%= render '/events/stream', events: @start_page.events %>
+  <% end %>
+
+  <%= render 'ads' %>
+</div>

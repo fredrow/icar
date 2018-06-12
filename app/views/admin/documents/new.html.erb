@@ -1,0 +1,11 @@
+<div class="col-md-8 col-md-offset-2 col-sm-12 reg-page">
+  <div class="headline">
+    <h1><%= title(t('.title')) %></h1>
+  </div>
+
+  <%= render 'form', document: @document, categories: @categories %>
+
+  <hr>
+  <%= link_to(t('.all_documents'), admin_documents_path,
+                                   class: 'btn secondary') %>
+</div>

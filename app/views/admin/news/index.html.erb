@@ -1,0 +1,38 @@
+<div class="headline">
+  <h1><%= title(t('.title')) %></h1>
+</div>
+
+<div class="col-md-3 col-sm-12 margin-bottom-20">
+  <%= render('/admin/news/sidebar', current: :index) %>
+  <hr>
+
+  <button class="wg-external-submit-button btn primary" data-grid-name="grid">
+    <%= t('wice_grid.filter') %>
+  </button>
+
+  <button class="wg-external-reset-button btn secondary" data-grid-name="grid">
+    <%= t('wice_grid.reset_filter') %>
+  </button>
+</div>
+
+<div class="col-md-9 col-sm-12">
+  <%= grid(@news_grid, hide_submit_button: true, hide_reset_button: true) do |g|
+    g.column name: News.human_attribute_name(:title), attribute: 'title', assoc: :translations do |news|
+      if news.title.present?
+        link_to(news, edit_admin_news_path(news))
+      end
+    end
+    g.column name: News.human_attribute_name(:image), attribute: 'image' do |news|
+      yes_no(news.image.present?)
+    end
+    g.column name: News.human_attribute_name(:user), assoc: :user, attribute: 'id' do |post|
+      user_link(post.user)
+    end
+    g.column name: News.human_attribute_name(:created_at), attribute: 'created_at' do |news|
+      l(news.created_at)
+    end
+    g.column name: News.human_attribute_name(:updated_at), attribute: 'updated_at' do |news|
+      l(news.updated_at)
+    end
+  end -%>
+</div>

@@ -1,0 +1,76 @@
+.message {
+  background-color: $white;
+  border: 1px solid $light-gray-text;
+  border-radius: 2px;
+  margin-bottom: 2px;
+  padding: 8px 20px 0;
+
+  &.by-admin {
+    border: 2px solid $fsek-orange;
+  }
+
+  img {
+    &.author {
+      height: 37px;
+      margin-right: 10px;
+      width: 37px;
+    }
+  }
+
+  .body {
+    overflow: hidden;
+
+    p {
+      color: $gray-text;
+      line-height: 1.4;
+    }
+  }
+
+  .heading {
+    font-size: 13px;
+    margin: 0 0 5px;
+    position: relative;
+
+    > a,
+    > a:hover {
+      color: $gray-headline;
+    }
+
+    > strong {
+      padding-right: 5px;
+    }
+
+    > small {
+      color: $gray-text;
+      font-size: 12px;
+      position: absolute;
+      right: 0;
+      top: 7px;
+    }
+  }
+
+  .updated {
+    color: $medium-gray-text;
+    font-size: 11px;
+    font-style: italic;
+  }
+}
+
+.message-box {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  margin-bottom: -15px;
+}
+
+.messages {
+  background-color: $light-gray;
+  border: 1px solid $light-gray-text;
+  border-radius: 2px;
+  flex: 1;
+  margin-bottom: 5px;
+  margin-top: 3px;
+  min-width: 315px;
+  overflow-y: auto;
+  width: 100%;
+}

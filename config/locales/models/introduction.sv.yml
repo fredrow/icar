@@ -1,0 +1,27 @@
+sv:
+  model:
+    introduction:
+      matrix:
+        hidden: Bakgrunden för matrisen döljs nu
+        shown: Bakgrunden för matrisen visas nu
+
+  activerecord:
+    models:
+      introduction:
+        one: Nollning
+        other: Nollningar
+    attributes:
+      introduction:
+        created_at: Skapades
+        current: Aktuell
+        description: Beskrivning
+        description_en: Beskrivning - engelsk
+        description_sv: Beskrivning - svensk
+        groups: Grupper
+        slug: Url
+        start: Börjar
+        stop: Slutar
+        title: Titel
+        title_en: Titel - engelsk
+        title_sv: Titel - svensk
+        updated_at: Uppdaterades

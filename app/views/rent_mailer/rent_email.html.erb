@@ -1,0 +1,19 @@
+
+<%= provide(:header_title, t('.header_title')) %>
+
+<h3><%= t('rent_mailer.mailer.hello', user: @rent.user) %></h3>
+
+<%= simple_format(t('.booked'), class: 'lead') %>
+<%= render 'attributes', rent: @rent %>
+
+<% if @rent.status != 'confirmed' %>
+  <%= simple_format(t('.confirm_foreman')) %>
+<% end %>
+
+<br>
+<hr>
+<br>
+
+<%= simple_format(t('rent_mailer.mailer.answer_with_questions')) %>
+<p><%= t('rent_mailer.mailer.sincerely') %>,<br>
+<%= t('rent_mailer.mailer.car_foreman') %></p>

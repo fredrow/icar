@@ -1,0 +1,28 @@
+<div class="message <%= message.by_admin ? 'by-admin' : '' %>" id="<%= message.id %>">
+  <% if (message.avatar != null) { %>
+    <a class="pull-left" href="/anvandare/<%= message.user_id %>">
+      <img class="author img-responsive" src="<%= message.avatar %>"></img>
+    </a>
+  <% } %>
+  <div class="body">
+    <div class="heading">
+      <strong>
+        <a href="/anvandare/<%= message.user_id %>"><%= message.name %></a>
+      </strong>
+      <small>
+        <% if (message.user_id == current_user ) { %>
+          <a href="#" class="destroy_button" data-turbolinks="false">
+            <i class="fa fa-trash"></i>
+          </a>
+        <% } %>
+        <%= message.day %> <%= message.time %>
+      </small>
+    </div>
+    <div class="msg-content">
+      <%= message.text %>
+    </div>
+    <div class="updated">
+      <%= message.updated_at %>
+    </div>
+  </div>
+</div>

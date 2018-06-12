@@ -1,0 +1,42 @@
+<div class="top">
+  <div class="container">
+    <ul class="loginbar pull-right">
+        <li class="locale-switcher">
+      <% if I18n.locale == :sv %>
+        <%= link_to(params.permit(:id).merge(locale: :en, only_path: true)) do %>
+          <span class="topbar-image"><%= image_tag('layout/gb.png', class: 'flag') %></span>
+          <span class="topbar-text">ENGLISH</span>
+          <span class="topbar-icon language-switch"><%= fa_icon('language')%></span>
+        <% end %>
+      <% else %> 
+        <%= link_to(params.permit(:id).merge(locale: :sv, only_path: true)) do %>
+          <span class="topbar-image"><%= image_tag('layout/se.png', class: 'flag') %></span>
+          <span class="topbar-text">SVENSKA</span>
+          <span class="topbar-icon language-switch"><%= fa_icon('language')%></span>
+        <% end %>
+      <% end %>
+      </li>
+      <li class="divider"></li>
+      <li><%= link_to( calendars_path) do %>
+          <span class="topbar-icon"><%= fa_icon('calendar') %></span>
+          <% end %>
+      </li>
+      <li class="divider"></li>
+      <% if user_signed_in? %>
+        <% if current_user.permissions.any? %>
+          <%= render 'layouts/dropdowns/admin_dropdown' %>
+          <li class="divider"></li>
+        <% end %>
+        <% if current_user.groups.count > 0 %>
+          <%= render 'layouts/dropdowns/groups_dropdown' %>
+          <li class="divider"></li>
+        <% end %>
+          <%= render 'layouts/dropdowns/user_dropdown' %>
+          <li class="divider"></li>
+          <%= render 'layouts/dropdowns/notifications_dropdown' %>
+      <% else %>
+        <%= render 'layouts/signin_signup' %>
+      <% end %>
+    </ul>
+  </div>
+</div>

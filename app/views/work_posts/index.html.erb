@@ -1,0 +1,19 @@
+<div class='headline'>
+  <h1><%= title(t('.title')) %></h1>
+</div>
+
+<div class="col-md-2 col-sm-12">
+  <%= render 'dropdown_filters', work_portal: @work_portal %>
+</div>
+
+<div class="col-md-10 col-sm-12">
+    <% @work_portal.work_posts.each do |wp| %>
+      <div class="row work-post index">
+        <div class="headline">
+          <h2><%= wp.to_s %></h2>
+        </div>
+
+        <%= render 'preview', work_post: wp, description: false %>
+      </div>
+    <% end %>
+</div>

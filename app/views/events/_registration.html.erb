@@ -1,0 +1,49 @@
+<div class="headline">
+  <h2><%= t('.registration') %></h2>
+</div>
+
+<div class="col-md-6 col-sm-12">
+  <%= event_attendees(event) %>
+  <br>
+
+  <div class="headline">
+    <h4><%= t('.description_headline') %></h4>
+  </div>
+  <span class="event description">
+    <%= markdown(t('.description')) %>
+    <%= simple_format(t('.description2')) %>
+    <%= markdown(t('.contact_if_problem')) %>
+    <%= contact_from_slug(slug: 'spindelman') %>
+    <hr>
+  </span>
+</div>
+
+<div class="col-md-6 col-sm-12">
+  <% if EventUser.eligible_user?(event, current_user) %>
+    <%= event_reg_status(event.signup, event_user) %>
+
+    <hr>
+
+    <% if event.food? %>
+      <span class="event info">
+        <ul>
+          <li>
+            <%= fa_icon('cutlery') %>
+            <%= User.human_attribute_name(:food_preferences) %>:
+            <%= food_preferences_str(current_user) %>
+            <%= link_to(t('.edit'), own_user_path, target: :blank_p) %>
+          </li>
+        </ul>
+      </span>
+
+    <% end %>
+
+    <% if event_user.persisted? %>
+      <%= render '/event_users/registered', event: event, event_user: event_user %>
+    <% elsif event.signup.open? %>
+      <%= render '/event_users/form', event: event, event_user: event_user %>
+    <% end %>
+  <% else %>
+    <%= event_reg_logged_in_or_member(@event, current_user) %>
+  <% end %>
+</div>

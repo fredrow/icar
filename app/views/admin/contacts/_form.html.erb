@@ -1,0 +1,28 @@
+<%= simple_form_for([:admin, contact]) do |f| %>
+  <%= f.association(:post, collection: posts, input_html: { class: 'select2' },
+                    hint: t('.name_or_post')) %>
+  <%= f.input :name_sv, wrapper_html: {class: 'inline half'} %>
+  <%= f.input :name_en, wrapper_html: {class: 'inline half'} %>
+  <%= f.input :text_sv, as: :pagedown, input_html: { preview: true, rows: 10 } %>
+  <%= f.input :text_en, as: :pagedown, input_html: { preview: true, rows: 10 } %>
+  <%= f.input :email %>
+  <%= f.input :public %>
+  <%= f.input :slug, hint: t('.slug_description') %>
+
+  <div class="input-group margin-bottom-20">
+    <% if contact.avatar.present? %>
+      <%= image_tag(contact.avatar.thumb.url, class: 'img responsive', height: '200px')%><br>
+      <br>
+      <%= link_to(t('.remove_avatar'), admin_contact_path(contact: {id: contact.id, remove_avatar: '1'}),
+                                       method: :patch,
+                                       data: {confirm: t('.confirm_avatar_removal')},
+                                       class: 'btn secondary') %>
+    <% end %>
+  </div>
+  <%= f.input :avatar, as: :file, hint: t('.avatar_hint') %>
+
+  <%= f.button :submit, id: 'contact-submit' %>
+  <% if contact.persisted? %>
+    <%= link_to(t('.destroy'), admin_contact_path(contact), method: :delete, class: 'btn danger pull-right') %>
+  <% end %>
+<% end %>

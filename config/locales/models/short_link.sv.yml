@@ -1,0 +1,14 @@
+sv:
+  model:
+    short_link:
+      invalid_url: felaktig adress
+
+  activerecord:
+    models:
+      short_link:
+        one: Snabblänk
+        other: Snabblänkar
+    attributes:
+      short_link:
+        link: Länk
+        target: Mål

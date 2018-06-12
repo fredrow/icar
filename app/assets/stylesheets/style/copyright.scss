@@ -1,0 +1,37 @@
+.copyright {
+  background: $footer-gray;
+  font-size: 12px;
+  padding: 12px 0 7px;
+  width: 100%;
+
+  .year {
+    color: $medium-gray-text;
+    float: left;
+  }
+
+  .contact {
+    color: $medium-gray-text;
+    float: right;
+  }
+
+  @media (max-width: 767px) {
+    .contact,
+    .year {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 1px 0 0;
+      text-align: center;
+    }
+  }
+
+  p {
+    color: none;
+  }
+
+  a {
+    color: $fsek-orange;
+    margin: 0 5px;
+  }
+}
+

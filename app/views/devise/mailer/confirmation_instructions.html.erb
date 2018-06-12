@@ -1,0 +1,16 @@
+<% provide(:header_title, t('.welcome')) %>
+
+<h3><%= t('.hello', user: @user.to_s) %></h3>
+
+<%= simple_format(t('.registered'), class: 'lead') %>
+<p>
+  <%= t('.before_starting') %>
+  <br>
+  <br>
+  <%= link_to(t('.please_confirm'),
+              user_confirmation_url(confirmation_token: @token),
+              class: 'btn primary center') %>
+</p>
+
+<%= simple_format(t('.enjoy')) %>
+<%= simple_format(t('.problem')) %>

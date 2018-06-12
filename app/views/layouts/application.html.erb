@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="sv" class="ie8"> <![endif]-->
+<!--[if IE 9]><html lang="sv" class="ie9"> <![endif]-->
+<!--[if !IE]><html lang="sv"><![endif]-->
+
+  <head>
+    <%= display_meta_tags %>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= csrf_meta_tags %>
+    <%= render '/layouts/favicon' %>
+  </head>
+
+  <body>
+    <span class="cookies">
+      <%= render 'cookies_eu/consent_banner', link: cookies_path %>
+    </span>
+
+    <%= render 'layouts/topbar' %>
+
+    <%= render 'layouts/header' %>
+
+    <%= yield :pre_content %>
+
+    <% if controller_name == 'static_pages' && action_name == 'index' %>
+      <div class="start-page">
+        <%= render 'layouts/content' %>
+      </div>
+    <% else %>
+      <%= render 'layouts/content' %>
+    <% end %>
+
+    <%= render 'layouts/copyright' %>
+
+    <%= render 'layouts/google_analytics' %>
+    <%= render 'layouts/hotjar' %>
+  </body>
+</html>

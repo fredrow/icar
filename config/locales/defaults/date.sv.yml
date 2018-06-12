@@ -1,0 +1,59 @@
+sv:
+  date:
+    formats:
+      default: '%-e %b %Y'
+      long: '%e %B %Y'
+      short: '%e %b'
+      day_month: '%e %b'
+      day: '%e'
+      month_year: '%b %Y'
+      weekday: '%A'
+
+    abbr_day_names:
+    - sön
+    - mån
+    - tis
+    - ons
+    - tor
+    - fre
+    - lör
+    abbr_month_names:
+    -
+    - jan
+    - feb
+    - mar
+    - apr
+    - maj
+    - jun
+    - jul
+    - aug
+    - sep
+    - okt
+    - nov
+    - dec
+    day_names:
+    - söndag
+    - måndag
+    - tisdag
+    - onsdag
+    - torsdag
+    - fredag
+    - lördag
+    month_names:
+    -
+    - januari
+    - februari
+    - mars
+    - april
+    - maj
+    - juni
+    - juli
+    - augusti
+    - september
+    - oktober
+    - november
+    - december
+    order:
+    - :day
+    - :month
+    - :year

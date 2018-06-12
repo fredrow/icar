@@ -1,0 +1,32 @@
+<%= render('search_bar', popular: @popular) %>
+
+<div class="col-md-9 col-sm-12">
+  <div class="headline">
+    <h1><%= @song %></h1>
+  </div>
+  <% if @song.category.present? %>
+    <span class="song-attr">
+      <span class="song-attr-name">
+        <%= Song.human_attribute_name(:category) %>:
+      </span> <%= @song.category %>
+    </span>
+  <% end %>
+  <% if @song.author.present? %>
+    <span class="song-attr">
+      <span class="song-attr-name">
+        <%= Song.human_attribute_name(:author) %>:
+      </span> <%= @song.author %>
+    </span>
+  <% end %>
+  <% if @song.melody.present? %>
+  <span class="song-attr">
+      <span class="song-attr-name">
+        <%= Song.human_attribute_name(:melody) %>:
+      </span> <%= @song.melody %>
+    </span>
+  <% end %>
+
+  <div class="song-content">
+    <%= markdown(@song.content) %>
+  </div>
+</div>

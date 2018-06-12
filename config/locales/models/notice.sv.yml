@@ -1,0 +1,20 @@
+sv:
+  activerecord:
+    models:
+      notice:
+        one: Notis
+        other: Notiser
+    attributes:
+      notice:
+        title: Titel
+        title_sv: Titel - svensk
+        title_en: Titel - engelsk
+        description: Text
+        description_sv: Text - svensk
+        description_en: Text - engelsk
+        public: Publik
+        d_publish: Publiceringsdatum
+        d_remove: Datum för borttagning
+        sort: Sorteringsindex
+        image: Bild
+        remove_image: Ta bort bild

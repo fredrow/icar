@@ -1,0 +1,56 @@
+sv:
+  model:
+    user:
+      account_updated: Kontoinställningar uppdaterades
+      attributes_missing: du måste fylla i dina användaruppgifter
+      edit_information: Redigera användaruppgifter
+      password_required: Lösenord måste fyllas i för att ändra uppgifter
+      password_updated: Lösenordet uppdaterades.
+      recaptcha_error: Något blev fel med recaptcha, vänligen fyll i igen.
+      only_predefined_food_prefs: Enbart fördefinierade matpreferenser kan väljas.
+
+      program:
+        physics: Teknisk Fysik
+        math: Teknisk Matematik
+        nano: Teknisk Nanovetenskap
+        other: Oklart
+      food_prefs:
+        vegetarian: Vegetarian
+        vegan: Vegan
+        pescetarian: Pescetarian
+        milk: Mjölkallergi
+        gluten: Glutenintolerant
+
+  activerecord:
+    models:
+      user: Användare
+    attributes:
+      user:
+        avatar: Profilbild
+        confirmed_at: E-post bekräftades
+        confirmed_email: Bekräftad epost
+        current_password: Nuvarande lösenord
+        display_phone: Visa telefonnummer för gruppmedlemmar
+        email: E-post
+        first_post: Visningspost
+        firstname: Namn
+        food_preferences: Matpreferenser
+        food_custom: Andra matpreferenser/allergier
+        lastname: Efternamn
+        member: Medlemskap
+        member_at: Medlemskap bekräftades
+        name: Namn
+        notification_count: Ej sedda notifikationer
+        password: Lösenord
+        password_confirmation: Bekräfta lösenord
+        phone: Telefon
+        program: Program
+        remember_me: Kom ihåg mig
+        remove_avatar: Ta bort profilbild
+        start_year: Började år
+        student_id: LUCAT-id
+        unconfirmed_email: Obekräftad epost
+        username: Användarnamn
+        notify_event_users: Push-notiser för eventanmälan
+        notify_event_closing: Push-notiser före eventanmälan stänger
+        notify_messages: Push-notiser för meddelanden

@@ -1,0 +1,31 @@
+<div class="headline">
+  <h1>
+    <%= title(t('.title'))%>
+    <small>
+      <%= t('.subtitle') %>
+    </small>
+  </h1>
+</div>
+
+<div class="col-md-12">
+<%= simple_format(t('.shifts_with_workers'))%>
+  <%= link_to(t('.administrate_all'),
+              admin_cafe_shifts_path, class: 'btn secondary') %>
+</div>
+<div class="col-md-12">
+  <%= grid(@cafe_shift_grid) do |grid|
+    grid.column name: CafeShift.human_attribute_name(:start), attribute: 'start'
+    grid.column name: CafeShift.human_attribute_name(:lp), attribute: 'lp'
+    grid.column name: CafeShift.human_attribute_name(:lv), attribute: 'lv'
+    grid.column name: model_name(User), assoc: :user, attribute: 'firstname', filter: false do |shift|
+      user_link(shift.user, target: :blank_p)
+    end
+    grid.column name: User.human_attribute_name(:email), assoc: :user, attribute: 'email', filter: false
+    grid.column name: User.human_attribute_name(:phone), assoc: :user, attribute: 'phone', filter: false
+    grid.column name: CafeWorker.human_attribute_name(:competition), assoc: :cafe_worker, attribute: 'competition'
+    grid.column name: t('global.show') do |shift|
+      link_to(t('global.show'), admin_cafe_shift_path(shift),
+                                class: 'btn secondary small')
+    end
+  end -%>
+</div>

@@ -1,0 +1,23 @@
+sv:
+  global:
+    'yes': Ja
+    'no': Nej
+    close: Stäng
+    destroy: Förinta
+    edit: Redigera
+    here: här
+    hide: Dölj
+    link: Länk
+    reset: Återställ
+    search: Sök
+    show: Visa
+    title: F-sektionen
+    description: F-sektionen är en ideell förening för studenter som läser vid något av programmen Teknisk fysik, Teknisk matematik och Teknisk nanovetenskap.
+    keywords:
+      - LTH
+      - teknisk fysik
+      - teknisk matematik
+      - teknisk nanovetenskap
+      - TLTH
+      - lund
+      - civilingenjör

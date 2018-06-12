@@ -1,0 +1,27 @@
+sv:
+  model:
+    page_element:
+      text: Text
+      image: Bild
+      main: Huvudfält
+
+  activerecord:
+    models:
+      page_element: Sidelement
+    attributes:
+      page_element:
+        created_at: Skapad
+        element_type: Sort
+        headline: Rubrik
+        headline_en: Rubrik - engelsk
+        headline_sv: Rubrik - svensk
+        index: Visningsindex
+        page: Sida
+        page_image: Bild
+        picture: Bild
+        sidebar: Sidofält
+        text: Text
+        text_en: Text - engelsk
+        text_sv: Text - svensk
+        updated_at: Uppdaterad
+        visible: Synlig

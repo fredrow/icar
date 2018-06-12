@@ -1,0 +1,11 @@
+sv:
+  songs:
+    index:
+      title: Sångbok
+      edit: Redigera
+
+    search_bar:
+      popular: Populära sånger
+      no_results: Inga sånger hittades
+      search: Låtsök
+      search_input: Sök efter en sång..

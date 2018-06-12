@@ -1,0 +1,17 @@
+<% description(t('.description')) %>
+<% keywords(t('.keywords')) %>
+
+<div class="col-md-8 col-md-offset-2 col-sm-12">
+  <div class="headline">
+    <h1><%= title(t('.title')) %></h1>
+  </div>
+
+  <p class="pull-right"><%= t('.free') %></p>
+  <br>
+
+  <ul class="list-group">
+    <% @all_tools.each do |tool| %>
+      <%= tool_link(tool, tool_path(tool)) %>
+    <% end %>
+  </ul>
+</div>

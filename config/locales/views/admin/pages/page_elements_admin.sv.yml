@@ -1,0 +1,35 @@
+sv:
+  admin:
+    page_elements:
+      form:
+        destroy_element: Förinta sidelement
+        images_hint: Redigera sida för att lägga till bilder
+        sidebar_hint: Placerar elementet i ett sidofält.
+
+      index_preview:
+        title: Visa alla sidelement
+
+      image_preview:
+        destroy: Förinta
+
+      preview:
+        image_missing: Bild saknas
+
+      edit:
+        all_elements: Alla sidelement
+        edit_page: Redigera sida
+        new_element: Nytt sidelement
+        show_page: Visa sida
+        title: Redigera sida
+
+      index:
+        edit_page: Redigera sida
+        new_element: Nytt sidelement
+        show_page: Visa sida
+        title: Administrera sidelement
+
+      new:
+        title: Nytt sidelement
+        all_elements: Alla sidelement
+        edit_page: Redigera sida
+        show_page: Visa sida

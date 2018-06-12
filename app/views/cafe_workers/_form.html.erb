@@ -1,0 +1,19 @@
+<%= simple_form_for([cafe_shift, cafe_shift.cafe_worker]) do |f| %>
+
+  <%= cafe_worker_working_thumbs(cafe_shift.cafe_worker,
+                                 user: current_user) %>
+
+  <%= f.association :user, collection: [current_user], include_blank: false %>
+
+  <%= cafe_worker_edit_user(cafe_shift.cafe_worker) %>
+
+  <%= f.input :competition, as: :boolean %>
+  <%= f.association :councils, collection: councils, input_html: { class: 'select2' } %>
+  <%= f.input :group %>
+  <%= f.button :submit %>
+  <% if cafe_shift.cafe_worker.persisted? %>
+    <%= link_to(t('.destroy'),
+                cafe_shift_cafe_worker_path(cafe_shift, cafe_shift.cafe_worker),
+                method: :delete, class: 'btn danger pull-right') %>
+  <% end %>
+<% end %>

@@ -1,0 +1,149 @@
+title_sv,title_en,short,starts_at,ends_at,dot,all_day,location_sv,location_en,drink,food,cash,description_sv,description_en
+Hälsningsanförande,Welcome speech,,2017-08-21 10:30:00,2017-08-21 11:30:00,,false,Kårhusets aula,Kårhusets aula,false,false,false,Rektorns hälsningsanförande. Rektorn hälsar alla nya studenter välkomna till LTH.,Description missing
+Upprop,Registration,,2017-08-21 11:30:00,2017-08-21 12:00:00,,false,Mattehuset,Mattehuset,false,true,false,Upprop. Missa inte detta.,Description missing
+SVL info,SVL info,,2017-08-21 13:30:00,2017-08-21 14:30:00,,false,E:A (E-huset),E:A (E-huset),false,false,false,Studie- och karriärvägledningen informerar. Träffa äldra studenter som är engagerade i utbildningen,Description missing
+Rundvandring,Campus tour,,2017-08-21 14:30:00,2017-08-21 17:00:00,,false,Campus,Campus,false,false,false,Rundvandring på LTH,Description missing
+Fadderhäng,Gathering with Mentors group,,2017-08-21 17:00:00,2017-08-21 20:00:00,,false,Hemma hos din fadder,Hemma hos din fadder,false,false,false,Faddergruppshäng. Mys med faddergruppenhemma hos en av dina faddrar. Faddrarna bjuder på mat.,Description missing
+Välkomstkväll,Welcome evening,,2017-08-21 20:00:00,2017-08-21 22:00:00,,false,MH,MH,false,false,false,Välkomstkväll i Mattehuset med alla faddergrupper!,Description missing
+Orange tisdag,Orange Tuesday,,2017-08-22 06:00:00,2017-08-22 23:59:00,,true,Överallt,Överallt,false,false,false,"Orangetisdag! Hylla din sektion med att bära något oranget idag, kanske din nya overall eller annat i samma fina kulör!",Description missing
+Framtidens Ingenjör,Framtidens Ingenjör,,2017-08-22 08:00:00,2017-08-22 16:00:00,,false,Campus,Campus,false,false,false,"Framtidens Ingenjör. Föreläsningar, övningar och workshops som studie- och yrkesvägledningen anordna för att förklara vad en ingenjörsyrket innebär.",Description missing
+Välkomstgasque,Welcome sittning,,2017-08-22 18:00:00,2017-08-22 23:00:00,double,false,"Gasquesalen, Kårhuset","Gasquesalen, Kårhuset",true,true,true,Välkomstgasque. Din första finsittning med F-sektionen! Här får du lära dig hur en sittning går till. Anmälning via fadder. Kom i tid! Klädkod: Kavaj,Description missing
+Programmets dag,Programmets dag,,2017-08-23 09:00:00,2017-08-23 17:00:00,,false,"F- Fysicum, Rydberg
+n- Fysikum, K-space
+π - MH:H","F- Fysicum, Rydberg
+n- Fysikum, K-space
+π - MH:H",false,true,false,Programmets dag. Respektive programledare beskriver utbildningen. Lärare i åk 1 presenterar sig och sina kurser. Dessutom berättar studenter om studierådet och samverkansinlärning.,Description missing
+Vattenhallen / Max IV,Vattenhallen / Max IV,,2017-08-23 14:30:00,2017-08-23 16:30:00,,false,"F, n - Vattenhallen
+π - MAX IV","F, n - Vattenhallen
+π - MAX IV",false,false,false,f & n: Experiment för fysiker och nanovetare i vattenhallen π: Studiebesök på MAX IV,Description missing
+Äventyrsuppdrag,Adventurous assignments,,2017-08-23 17:00:00,2017-08-23 22:00:00,,false,MH,MH,false,false,false,Äventyrliga uppdrag i Lund med faddergruppen.,Description missing
+Ubåtslabb och S.P.E.X,Ubåtslabb och S.P.E.X,,2017-08-24 08:30:00,2017-08-24 15:00:00,,false,"Fysicum, Rydberg","Fysicum, Rydberg",false,false,false,Ubåtslaboration (alla) + SP.EX ( f n ) Alla nollor tävlar i ubåtsbyggande med diverse godtyckliga föremål för att uppfylla vissa kriterier. Martin Magnusson visar hur spexigt Spektroskopi kan vara.,Description missing
+Ovvelekar,Ovverall games,,2017-08-24 17:00:00,2017-08-24 20:00:00,single,false,Gräsmatta vid Loftet,Gräsmatta vid Loftet,false,false,false,Overallekar! Bland det bästa med att vara teknolog! Ta gärna med ett litet mellanmål så att du orkar ha så roligt som möjligt hela eftermiddagen! Klädkod: Overall,Description missing
+Min roll som medmänniska på LTH - Zanyar Adami,Min roll som medmänniska på LTH - Zanyar Adami,,2017-08-24 15:00:00,2017-08-23 16:30:00,,false,Kårhusets aula,Kårhusets aula,false,false,false,Min roll som medmänniska på LTH - Zanyar Adami,Description missing
+Sektionssafari,Sektionssafari,,2017-08-25 12:30:00,2017-08-25 14:00:00,,false,Campus,Campus,false,false,false,Sektionssafari och rundvandring fortsätter på LTH.,Description missing
+Sektionssafari,Sektionssafari,,2017-08-25 09:00:00,2017-08-25 11:00:00,single,false,Campus,Campus,false,false,false,Sektionssafari och rundvandring på LTH. Här får ni se hur vår fina sektion fungerar och hur du kan engagera dig samt hur du tar dig runt och hittar förnödenheter på LTH. En del praktikaliteter för din studietid kommer även att ordnas.,Description missing
+Hur läser man matte vid LTH?,Hur läser man matte vid LTH?,,2017-08-25 11:00:00,2017-08-25 12:00:00,,false,Kårhusets aula,Kårhusets aula,false,false,false,Föreläsning: “Hur läser man matematik vid LTH?”,Description missing
+Camp,Camp,,2017-08-25 17:00:00,2017-08-26 12:00:00,single,false,Samling utanför MH,Samling utanför MH,false,true,true,"Camp! Det roligaste på hela första veckan, om inte hela nollningen. Detta vill du inte missa! Medtag liggunderlag och sovsäck! Klädkod: Overall.",Description missing
+Faddergruppspicknick,Mentor group picnic,,2017-08-25 15:00:00,2017-08-25 17:00:00,single,false,Utanför MH,Utanför MH,false,false,false,Faddergruppspicknick,Description missing
+Nolledans och lekar med reiseleiteriet,Nolledans and games with reiseleiteriet,,2017-08-26 17:00:00,2017-08-26 18:00:00,single,false,"Amfiteatern, Kårhuset","Amfiteatern, Kårhuset",false,false,false,"Reiseleiteriet fixar underbara lekar och lär ut nolledanser i Amfiteatern. På med ovven och tagga inför kvällen sittningen, tillsammans med e,k och ING. Klädkod: Overall.",Description missing
+Flower powEr-sittning,Flower powEr-sittning,,2017-08-26 18:00:00,2017-08-26 22:00:00,double,false,MH,MH,true,true,true,flower power-sittning Klädkod: Overall och gärna någon temaenlig detalj,Description missing
+UtEDischo,UtEDischo,,2017-08-26 22:00:00,2017-08-27 02:00:00,,false,"E,D-parkeringen","E,D-parkeringen",true,false,true,"Utedischo! En återkommande succé med dansgolv, barer och fasligt massa människor! Passa på att byta overallsdelar med studenterna på andra program! Klädkod: Overall.",Description missing
+Unionen står utanför MH,Unionen outside of MH ,,2017-08-28 10:00:00,2017-08-28 15:00:00,,false,Utanför MH,Utanför MH,false,false,false,Unionen står utanför mattehuset. Spring förbi dem och kolla hur de kan hjälpa dig att få så mycket som möjligt ut av din studietid. De utlovar tävlingar och gött häng.,Description missing
+Andevandring,Spirit walk ,,2017-08-28 17:00:00,2017-08-28 20:00:00,,false,MH,MH,false,false,false,"Andevandring! Nya äventyr väntar, så se till att vara på plats när det händer!",Description missing
+Orangetisdag,Orange Tuesday,,2017-08-29 06:00:00,2017-08-29 23:59:00,,true,Överallt,Överallt,false,false,false,Orangetisdag! Ta på dig det orangeaste du äger (ovven kanske?) för att visa vilken sektion som har den snyggaste färgen!,Description missing
+Kårkamp,Battle of th guilds,,2017-08-29 12:00:00,2017-08-29 13:00:00,,false,Amfiteatern,Amfiteatern,false,true,false,Kårkamp. Nu är det dags att visa upp att f är bäst och vackrast genom tävlingar och lek med de andra sektionerna. Kåren säljer enklare mat men själva eventet är gratis.,Description missing
+Uppdragshäng,Hang out with your mission group,,2017-08-29 17:00:00,2017-08-29 22:00:00,,false,MH,MH,false,true,false,Uppdragshäng,Description missing
+Draggning,Draggning,,2017-08-30 17:00:00,2017-08-30 18:30:00,,false,Sjön Sjön,Sjön Sjön,false,false,false,Draggning: Tävla med de andra sektionerna om vem som kan hitta flest skatter i sjön Sjöns mytomspunna vatten.,Description missing
+UppvärmnING,UppvärmnING,,2017-08-30 18:30:00,2017-08-30 20:30:00,,false,Mellan Ikdc och KC,Mellan Ikdc och KC,false,true,false,UppvärmninING. Foodmarket! Känner du dig sliten efter att ha badat i sjön Sjön? Ät gott och häng med dina vänner.,Description missing
+INGvasion,INGvasion,,2017-08-30 22:00:00,2017-08-31 02:00:00,,false,"Gasquesalen, Kårhuset","Gasquesalen, Kårhuset",true,false,true,INGvasion. Helsingborgsingenjörerna intar Lund och ställer till med episk fest. Klädkod: Overall,Description missing
+Sveriges ingenjörer,Sveriges ingenjörer,,2017-08-31 12:00:00,2017-08-31 13:00:00,,false,Kårhuset,Kårhuset,false,true,false,"Sveriges Ingenjörer, pratar om sin verksamhet och bjuder på lunch.",Description missing
+Pluggföstid,Study time,,2017-08-31 17:00:00,2017-08-31 19:00:00,single,false,MH,MH,false,false,false,"Pluggföstid. Nu när studierna kommit igång finns pluggfösen här för att hjälpa dig. Frukta inte, de är här för att svara på alla dina frågor om dina första kurser.",Description missing
+Lunchcase med LINC,Lunchcase med LINC,,2017-09-01 12:00:00,2017-09-01 13:00:00,,false,MH,MH,false,false,false,Lunchcase med FNU och LINC. Kom och prova på problemlösning med F-sektionens näringslivsutskott och Lund University Finance Society.,Description missing
+LKG,LKG,,2017-09-01 18:00:00,2017-09-01 22:00:00,double,false,Gasquesalen,Gasquesalen,false,false,false,LKG - Lära Känna Gasque! En fantastisk finsittning där du lär känna ännu fler studiekamrater. Klädkod: Kavaj.,Description missing
+Brunch med Reiseleiteriet,Brunch with Reiseleiteriet,,2017-09-02 11:00:00,2017-09-02 12:30:00,,false,Mattehuset,Mattehuset,false,true,false,Brunch. Reiseleiteriet bjuder in till en mysig brunch. Kom och ladda upp inför flyING.,Description missing
+FlyING,FlyING,,2017-09-02 13:00:00,2017-09-03 02:00:00,double,true,Helsingborg. Bussen avgår från Kårhuset,Helsingborg. Bussen avgår från Kårhuset,false,true,true,"FlyING, är en tävling mellan sektionerna i vem som flyger längst i sin hemmabyggda farkost. Målet är att ta sig ända till Danmark, vilket vi alla kommer klara. Viktigt att vara i tid. Fick du ingen bussbiljett, misströsta ej, att åka tåg är minst lika kul. Klädkod: Overall",Description missing
+Faddergruppshäng,Hang out with your mentorgroup,,2017-09-03 06:00:00,2017-09-03 22:00:00,,true,Hos din fadder,Hos din fadder,false,false,false,Faddergruppshäng. Myspys med din underbara faddergrupp. Kanske kan du passa,Description missing
+Lunch-beat,Lunch-beat,,2017-09-04 12:00:00,2017-09-04 13:00:00,,false,Gasquesalen,Gasquesalen,false,true,false,Lunchbeat - Dansa och ät lunch med studenter från andra sektioner under en festlig lunchtimme. Mat kommer att finnas till försäljning.,Description missing
+Sångboksgenomsjungning,Song book sittning,,2017-09-04 19:00:00,2017-09-04 23:00:00,,false,MH,MH,false,true,true,Sångboksgenomsjungning. Har du undrat hur man egentligen sjunger Härjarevisan? Sångförmännen fixar en hejdundrande sittning och går igenom både mer och mindre kända sånger. Klädkod: Overall,Description missing
+Orange tisdag,Orange Tuesday,,2017-09-05 06:00:00,2017-09-05 23:59:00,,true,Hela LTH,Hela LTH,false,false,false,Orangetisdag! En favorit i repris! Passa på att visa upp dina snyggaste märken!,Description missing
+Kårkamp,Battle of the guilds,,2017-09-05 12:00:00,2017-09-05 13:00:00,,false,AMfiteatern,AMfiteatern,false,true,false,Kårkamp. Nu är det dags att visa upp att f är bäst och vackrast genom tävlingar och lek med de andra sektionerna. Kåren säljer enklare mat men själva eventet är gratis.,Description missing
+"Kårestival, Märquespikniquen, Märkesmålning",Kårestival and Märquespikniquen,,2017-09-05 15:00:00,2017-09-05 18:00:00,,false,"Utanför Mattehuset, Amfiteatern, Gasquesalen","Utanför Mattehuset, Amfiteatern, Gasquesalen",false,true,false,"Kårestival. Kårestivalen är ett perfekt event för att upptäcka hela Teknologkåren. Varje utskott, förening och även Lunds nationer kommer att erbjuda en lek, show, utmaningeller liknande för att visa vad just dem gör för studenterna. Mat kommer att finnas till försäljning. Märquespikniquen. Ett exemplariskt tillfälle att köpa märken från de andra sektionerna.",Description missing
+"Ericsson, lunchföredrag","Ericsson, lunch lecture",,2017-09-06 12:00:00,2017-09-06 13:00:00,,false,MH:R,MH:R,false,true,false,Lunchföredrag med Ericsson. Kom och lyssna på spännande föredrag! Ericsson bjuder även på lunch.,Description missing
+Pluggkväll,Study time,,2017-09-06 17:00:00,2017-09-06 20:00:00,single,false,Fysicum,Fysicum,false,true,false,Pluggkväll. Kom och plugga med dina vänner och faddergrupp tillsammans med studierådet. Studierådet bjuder hungriga studenter på mat!,Description missing
+Pluggföstid,Study time,,2017-09-07 17:00:00,2017-09-07 19:00:00,,false,MH,MH,false,false,false,Pluggföstid,Description missing
+Jesperspexet,Jesperspexet,,2017-09-07 18:00:00,2017-09-07 21:00:00,,false,AF-Borgen,AF-Borgen,false,false,true,Jesperspexet!,Description missing
+ÖFS och Cheer-tävling,ÖFS and Cheer-competition,,2017-09-08 17:00:00,2017-09-08 20:00:00,,false,Vid Sjön Sjön,Vid Sjön Sjön,false,false,false,"ÖverFösStafetten. Sektionerna tävlar i ett maffigt triathlon runt sjön Sjön. Kom och heja F-sektionen till en storslagen seger. Cheertävling, för att bevisa vilken sektion som har de mest peppade medlemmarna blir det en cheertävling.",Description missing
+Utomhussittingen,Outdoor sittning,,2017-09-08 20:00:00,2017-09-09 02:00:00,,false,På gräset utanför MH,På gräset utanför MH,false,true,true,Utomhussittning. En fantastisk sittning utanför mattehuset. Allt börjar efter tävlingarna.,Description missing
+Sillafrukost,Herring breakfast,,2017-09-09 08:00:00,2017-09-09 10:00:00,,false,MH,MH,false,true,false,Sillafrukost som styrelsen bjuder på för att Nollan skall orka med den magiska dag som väntar. Klädkod: Overall.,Description missing
+Nollelördagen,Nollesaturday,,2017-09-09 10:00:00,2017-09-09 15:00:00,,true,Lundagård,Lundagård,false,true,false,Nollelördagen är äntligen här. En stor folkfest i Lundagård för alla studenter på LTH. Sektionerna möts i tre tävlingar. Missa inte denna galna tillställning! Mat kommer att finnas till försäljning. Klädkod: Overall.,Description missing
+"En FeD resa, Sittning med D",Sittning with D,,2017-09-09 18:00:00,2017-09-09 22:00:00,double,false,MH,MH,true,true,true,En fed resa. Vi firar utkomsten av dagens tävlingar med en fantastisk finsittning tillsammans med -sektionen. Klädkod: Kavaj eller temaenligt,Description missing
+Champagnefrukost,Champagnebreakfast,,2017-09-10 10:00:00,2017-09-10 12:00:00,,false,Katedralskolan,Katedralskolan,true,false,false,"Champagnefrukost! Börja dagen med lite bubbel som Nämnden bjuder på och ladda upp inför det stora sjöslaget, Regattan. Klädkod hela dagen: Overall.",Description missing
+Regattatåg,Regattatåg,,2017-09-10 12:00:00,2017-09-10 14:00:00,,false,Från Katedralskolan till Sjön Sjön,Från Katedralskolan till Sjön Sjön,false,false,false,Regattatåg! Alla sektioner på LTH tågar gemensamt i parad längs Lunds gator. Mycket spektakulärt och minst sagt uppseendeväckande!,Description missing
+Regattan,Regattan,,2017-09-10 14:00:00,2017-09-10 16:30:00,,false,Sjön Sjön,Sjön Sjön,false,false,false,"Regattan. Det är dags för Regattan! Sjöslag
+i sjön Sjön om vilka sektioner som har de
+bästa nollorna på LTH. Lätt för oss att veta,
+men dags att visa alla andra! Kom och
+kämpa för -sektionens ära!",Description missing
+Regattafest (eftermiddagsfest),Regattaparty,,2017-09-10 16:30:00,2017-09-10 20:00:00,,false,Gasquesalen,Gasquesalen,false,false,true,"Regattafest. Finaloverallfesten med alla
+sektionerna för att fira dagens strapatser.",Description missing
+Unionen bjuder på grillkväll,BBQ night with Unionen,,2017-09-11 17:00:00,2017-09-11 19:00:00,,false,MH,MH,false,true,false,"Unionen bjuder in till grillkväll. Kom och
+lyssna till hur du blir framgångsrik på
+LinkedIn, är av grillbufféen de bjuder på
+samt delta på deras efterföljande aktiviteter.",Description missing
+Orangetisdag,Orange Tuesday,,2017-09-12 06:00:00,2017-09-11 23:00:00,,true,Överallt,Överallt,false,false,false,"Orangetisdag
+Succén fortsätter! Var sydde du på helgens
+regattamärke?",Description missing
+Kårkamp,Battle of the guilds,,2017-09-12 12:00:00,2017-09-12 13:00:00,,false,Amfiteatern,Amfiteatern,false,true,false,"Kårkamp. Nu är det dags att visa upp att
+är bäst och vackrast genom tävlingar och
+lek med de andra sektionerna. Kåren säljer
+enklare mat men själva eventet är gratis.",Description missing
+WaDerloo,WaDerloo,,2017-09-12 17:00:00,2017-09-12 19:00:00,,false,Gräsmattan utanför A-huset,Gräsmattan utanför A-huset,false,false,false,"WaDerloo - Ett stort vattenkrig mot de andra
+sektionerna.
+Klädkod: Overall",Description missing
+Pluggkväll,Study time,,2017-09-13 17:00:00,2017-09-13 20:00:00,single,false,Fysicum,Fysicum,false,true,false,"Pluggkväll. Kom och plugga med dina
+vänner och faddergrupp tillsammans med
+studierådet. Studierådet bjuder hungriga
+nollor på mat!",Description missing
+Spelkväll med FISK,Game night,,2017-09-13 20:00:00,2017-09-13 22:00:00,,false,MH,MH,false,false,false,"Spelkväll! Välkommen på spelkväll med
+FISK, LTH:s mysigaste spelförening! Vare
+sig du är rutinerad brädspelare sedan tidigare
+eller nyfiken på att prova något nytt är det hit
+du ska simma!",Description missing
+"Combine, lunchföredrag","Combine, lunch lecture",,2017-09-14 12:00:00,2017-09-14 13:00:00,,false,MH:R,MH:R,false,true,false,"Lunchföredrag med Combine. Kom och
+lyssna på Combine när de pratar om sin
+verksamhet och om vad de sysslar med, det
+bjuds på lunch!",Description missing
+Pluggföstid,Study time,,2017-09-14 17:00:00,2017-09-14 19:00:00,,false,MH,MH,false,false,false,Pluggföstid,Description missing
+Actic CIrkelträning,Actic circut training,,2017-09-14 19:00:00,2017-09-14 21:00:00,,false,Actic Olympen (Sparta),Actic Olympen (Sparta),false,false,false,"Cirkelträning med Actic. Actic bjuder in
+till ett cirkelträningspass i gymmet enbart
+för F-sektionens medlemmar. Kom oavsett
+form och få en bra start på tränivngen nu när
+nollningen närmar sig sitt slut.",Description missing
+Förfesten,Preparty,,2017-09-15 14:00:00,2017-09-15 15:00:00,,false,Utanför MH,Utanför MH,false,false,false,"Lunds universitet fyller 350 år och arrangerar
+fest!",Description missing
+350-års firande,Lund University celebrates 350 years,,2017-09-15 14:00:00,2017-09-15 20:00:00,,false,Lundagård,Lundagård,false,false,false,"Temasittning, en sannerligen andlig fest!
+Klädkod overall eller temaenligt.",Description missing
+Temasittning,Theme sittning,,2017-09-16 15:00:00,2017-09-16 22:00:00,,false,Loftet,Loftet,false,false,false,"Temasittning, en sannerligen andlig fest!
+Klädkod overall eller temaenligt.",Description missing
+Pluggbrunch,Study brunch,,2017-09-17 12:00:00,2017-09-17 14:00:00,double,false,Kårhuset,Kårhuset,false,false,false,Pluggbrunch! Kåren bjuder in till plugg och brunch.,Description missing
+Faddergruppshäng,Hang out with your mentorgroup,,2017-09-17 10:00:00,2017-09-17 22:00:00,,true,Hos din fadder,Hos din fadder,false,false,false,"Faddergruppshäng. Myspys med din
+underbara faddergrupp. Kanske kan du passa
+på att sy fast några märken på din overall?",Description missing
+Idrottskväll,Sports night,,2017-09-18 18:00:00,2017-09-18 21:00:00,double,false,Victoriastadion,Victoriastadion,false,false,false,Idrottskväll,Description missing
+Orangetisdag,Orange Tuesday,,2017-09-19 06:00:00,2017-09-19 22:00:00,,true,Överallt,Överallt,false,false,false,"Orangetisdag! En favorit i repris! Passa på
+att visa upp dina snyggaste märken!",Description missing
+Lunchföredrag TetraPak,"Tetra Pak, lunch lecture",,2017-09-19 12:00:00,2017-09-19 13:00:00,,false,MH:R,MH:R,false,true,false,"""Lunchföredrag med TetraPak. Kom och
+lyssna på TetraPak när de pratar om sin
+verksamhet och om vad de sysslar med, det
+bjuds på lunch!""",Description missing
+Pluggkväll,Study night,,2017-09-20 17:00:00,2017-09-20 20:00:00,,false,Fysicum,Fysicum,false,true,false,"Pluggkväll. Kom och plugga med dina
+vänner och faddergrupp tillsammans med
+studierådet. Studierådet bjuder hungriga
+nollor på mat!",Description missing
+Nollegasque,Nollegasque,,2017-09-21 17:00:00,2017-09-22 02:00:00,single,false,Gasquesalen,Gasquesalen,true,true,true,"Nollegasque! Nu är det äntligen dags att bli
+etta genom att alla nollor får dricka in sin
+teknologmössa. Se till att ha förbeställt en
+mössa hos Föset. Detta är en tillställning du
+inte vill missa!
+Klädkod: Mörk kostym eller Högtidsdräkt.",Description missing
+Sensation Red,Sensation Red,,2017-09-27 22:00:00,2017-09-28 02:00:00,,false,Gasquesalen,Gasquesalen,false,false,true,"Sensation Red. M-sektionen bjuder till fest
+för att hylla sin sektionsfärg.
+Klädkod: Rött",Description missing
+Pluggbrunsch,Study brunch,,2017-09-24 12:00:00,2017-09-24 14:00:00,double,false,Kårhuset,Kårhuset,false,true,false,"Pluggbrunch! Kåren bjuder in till plugg och
+brunch.",Description missing
+Älgresan,Elk trip,,2017-09-30 10:00:00,2017-09-30 22:00:00,,true,"Skånes djurpark, MH","Skånes djurpark, MH",false,false,true,"Älgresan! Ett event som anordnas utav
+Reiseleiteriet, där sektionens medlemmar
+beger sig till Skånes Djurpark. På plats så
+kommer vi traditionsenligt att hedra vårt
+egna helgon, Hilbert älg, i san sektionsanda!
+Efter besöket hos Hilbert tar vi oss tillbaks
+till Mattehuset där vi avrundar kvällen
+tillsammans med en sittning. Eventet är
+sedan gammalt en tradition på sektionen som
+vi hoppas att så många som möjligt deltar i!
+Klädkod: Mörk kostym eller
+Högtidsdräkt.",Description missing
+STORSLAGEN,STORSLAGEN,,2017-09-30 22:00:00,2017-10-01 02:00:00,,false,Gasquesalen,Gasquesalen,true,false,true,"STORSLAGEN Den stora så kallade
+S-festen som varje år avslutar Kårens
+nollning med stor fest i hela kårhuset. Det
+blir naaajs!",Description missing

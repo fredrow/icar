@@ -1,0 +1,24 @@
+sv:
+  model:
+    candidate:
+      add_user_information: Du måste fylla i dina användaruppgifter
+      book_interview: Boka intervju
+      not_editable: kandidaturer för posten kan inte skapas eller redigeras just nu.
+      not_allowed_to_destroy: Inte tillåtet att radera kandidaturen.
+      similar_candidate: har redan en likadan kandidatur.
+
+  activerecord:
+    models:
+      candidate:
+        one: Kandidatur
+        other: Kandidaturer
+    attributes:
+      candidate:
+        count: Antal kandiderande
+        created_at: Skapades
+        editable_until: Kan redigeras till
+        elected_by: Väljs av
+        election: Val
+        post: Post
+        updated_at: Uppdaterades
+        user: Användare

@@ -1,0 +1,24 @@
+sv:
+  admin:
+    notices:
+      form:
+        confirm_image_removal: Vill du verkligen ta bort bilden? Ändringar i formuläret kommer inte att sparas.
+        destroy: Förinta notis
+        remove_image: Ta bort bild
+
+      edit:
+        title: Redigera notis
+        administrate_notices: Administrera notiser
+
+      index:
+        title: Administrera notiser
+        new_notice: Ny notis
+
+      new:
+        administrate_notices: Administrera notiser
+        title: Ny notis
+
+      sidebar:
+        all_notices: Alla notiser
+        new: Ny notis
+        edit: Redigera notis

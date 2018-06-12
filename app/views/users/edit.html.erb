@@ -1,0 +1,28 @@
+<% title(t('.title')) %>
+<div class="col-md-3 col-sm-12">
+  <div class="list-group sidebar-nav">
+    <%= link_to(edit_own_user_path(tab: :profile),
+                class: active_list_group(@tab, :profile)) do %>
+      <%= fa_icon('user', text: t('.profile')) %>
+    <% end %>
+    <%= link_to(edit_own_user_path(tab: :account),
+                class: active_list_group(@tab, :account)) do %>
+      <%= fa_icon('cog', text: t('.account')) %>
+    <% end %>
+    <%= link_to(edit_own_user_path(tab: :password),
+                class: active_list_group(@tab, :password)) do %>
+      <%= fa_icon('hashtag', text: t('.password')) %>
+    <% end %>
+  </div>
+
+  <%= link_to(t('.back_to_root'), root_path, class: 'btn secondary') %>
+</div>
+<div class="col-md-9 col-sm-12">
+  <% if @tab == :profile %>
+    <%= render 'form', user: current_user %>
+  <% elsif @tab == :account %>
+    <%= render 'account_form', user: current_user %>
+  <% elsif @tab == :password %>
+    <%= render 'password_form', user: current_user %>
+  <% end %>
+</div>

@@ -1,0 +1,22 @@
+<% description(@council.description) %>
+
+<div class="headline">
+  <h1><%= title(@council.to_s) %></h1>
+</div>
+
+<% content_for(:council_sidebar) do %>
+    <%= render('/elements/dropdown_button',
+               collection: @councils,
+               controller: :councils,
+               action: :show,
+               title: @council.to_s) %>
+    <hr>
+<% end %>
+
+<% if @council.page.present? %>
+  <%= render @council.page, title: false %>
+<% end %>
+
+<% if @council.posts.present? %>
+  <%= render '/posts/table', posts: @council.posts %>
+<% end %>

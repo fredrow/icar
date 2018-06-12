@@ -1,0 +1,10 @@
+<% if Rails.env.production? %>
+  User-Agent: *
+  Allow: /
+  Disallow: /admin
+  Disallow: /api
+  Sitemap: https://fsektionen.se/sitemaps/sitemap.xml.gz
+<% else %>
+  User-Agent: *
+  Disallow: /
+<% end %>

@@ -1,0 +1,33 @@
+<%= simple_form_for([event, event_user], remote: true) do |f| %>
+  <ul>
+  <% event_user.errors.each do |e| %>
+    <li><%= e.to_s %></li>
+  <% end %>
+  </ul>
+  <% if event.signup.question.present? %>
+    <span class="event question">
+      <%= event.signup.question %>
+    </span>
+    <%= f.input :answer, hint: t('.answer_hint') %>
+  <% else %>
+    <%= f.input :answer, as: :hidden %>
+  <% end %>
+  <% if event.signup.order.any? && event_user_types(event.signup, current_user).any? %>
+    <% user_types = event_user_types(event.signup, current_user) %>
+
+    <%= f.input :user_type,
+                collection: user_types,
+                as: :radio_buttons,
+                label: t('.user_type_label'),
+                required: true,
+                checked: user_types.first %>
+  <% end %>
+  <% groups = event_user_groups(event.signup, current_user) %>
+  <%= f.association :group, collection: groups,
+                            as: :radio_buttons,
+                            input_html: {class: 'group-radio'},
+                            required: true,
+                            checked: groups.first %>
+  <%= f.input :group_custom, label: false, placeholder: 'Ange egen grupp', input_html: {class: 'group-custom'} %>
+  <%= f.button :submit, t('.submit'), data: { confirm: t('.confirm_registration') } %>
+<% end %>

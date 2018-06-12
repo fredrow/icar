@@ -1,0 +1,20 @@
+<div class="message by-admin">
+  <% if message.user.avatar? %>
+    <%= link_to(user_path(message.user), class: 'pull-left') do %>
+      <%= image_tag(message.user.thumb_avatar, class: 'author img-responsive') %>
+    <% end %>
+  <% end %>
+  <div class="body">
+    <div class="heading">
+      <strong>
+        <%= user_link(message.user) %>
+      </strong>
+      <small>
+        <%= message_edit_link(message) %>
+        <%= message_destroy_link(message) %>
+        <%= localized(message.created_at, format: :short) %>
+      </small>
+    </div>
+    <%= markdown(message.content) %>
+  </div>
+</div>

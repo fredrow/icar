@@ -1,0 +1,23 @@
+sv:
+  model:
+    event_user:
+      already_registered: Du är redan anmäld till evenemanget
+      not_open: Det går inte att anmäla sig till evenemanget just nu
+      user_not_member: Användare är inte medlem
+      unavailable_type: Felaktig användartyp vald
+      unallowed_type: Grupptypen är inte tillåten
+      user_type_not_allowed: Användartypen tillåts inte
+      not_in_group: Tillhör inte gruppen
+      other_group: Annan
+
+  activerecord:
+    models:
+      event_user: Evenemangsanmälan
+
+    attributes:
+      event_user:
+        answer: Svar
+        user_type: Användartyp
+        created_at: Skapad
+        group: Grupp
+        group_custom: Annan grupp

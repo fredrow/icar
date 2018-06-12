@@ -1,0 +1,23 @@
+sv:
+  model:
+    page:
+      namespace_format: Får endast vara små bokstäver, a-z och 0-9
+
+  activerecord:
+    models:
+      page:
+        one: Sida
+        other: Sidor
+
+    attributes:
+      page:
+        council: Utskott
+        created_at: Skapad
+        image_upload: Ladda upp bilder
+        namespace: Gruppering
+        title: Titel
+        title_sv: Titel - svensk
+        title_en: Titel - engelsk
+        updated_at: Uppdaterad
+        url: Url
+        visible: Synlig

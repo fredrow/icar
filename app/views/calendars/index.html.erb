@@ -1,0 +1,23 @@
+<% description(t('.description')) %>
+<% keywords(t('.keywords')) %>
+
+<div class="headline">
+  <h1><%= title(t('.title')) %></h1>
+</div>
+
+<% if I18n.locale.to_s == 'en' %>
+  <div id="event_calendar_en" class="calendar"></div>
+<% else %>
+  <div id="event_calendar" class="calendar"></div>
+<% end %>
+<hr>
+<%= link_to(t('.subscription'), export_calendars_url(protocol: 'webcal', format: 'ics'), class: 'btn primary')%>
+<h3><%= t('.subscribe_instructions_title') %></h3>
+<ol>
+  <li><%= markdown(t('.step1', google_calendar: link_to("Google Calendar", 'https://calendar.google.com/calendar/render').html_safe)) %></li>
+  <li><%= markdown(t('.step2')) %></li>
+  <li><%= markdown(t('.step3')) %></li>
+  <li><%= markdown(t('.step4')) %></li>
+  <li><%= markdown(t('.step5')) %></li>
+</ol>
+<%= markdown(t('.OBS')) %>

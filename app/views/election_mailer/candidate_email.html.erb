@@ -1,0 +1,27 @@
+<% provide(:header_title, @candidate.election.to_s) %>
+
+<h3><%= t('election_mailer.hello', name: @candidate.user) %></h3>
+
+<p class="lead"><%= "#{t('.you_have_candidated')} #{@candidate.post}." %></p>
+
+<% if @candidate.post.elected_by == Post::GENERAL %>
+  <%= markdown(@candidate.election.candidate_mail) %>
+  <%= candidate_mail_link_html(@candidate) %>
+<% else %>
+  <%= markdown(@candidate.election.candidate_mail_star) %>
+<% end %>
+
+<br>
+<br>
+<hr>
+<br>
+
+<%= simple_format(t('.election_closes_at',
+                    date: l(@candidate.election.post_closing(@candidate.post)))) %>
+<br>
+
+<%= link_to(t('.show_your_candidacies'), candidates_url(host: PUBLIC_URL), class: 'btn') %>
+<br>
+<br>
+
+<%= simple_format(t('.sincerely')) %>

@@ -1,0 +1,20 @@
+sv:
+  contacts:
+    contact:
+      users: Posten innehas av
+      contact: Kontakta
+
+    index:
+      description: Kontakta våra funktionärer om ni undrar eller behöver hjälp med något.
+      keywords:
+        - kontakt
+        - styrelse
+        - bil
+      title: Kontaktsida
+
+    send_form:
+      submit: Skicka meddelande
+
+    show:
+      back_to_contacts: Alla kontakter
+      users: Posten innehas av

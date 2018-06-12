@@ -1,0 +1,55 @@
+.election {
+  p {
+    color: $black;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .countdown {
+    .timer {
+      color: $gray-headline;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 25px;
+      margin-top: 10px;
+    }
+  }
+
+  &.grid {
+    tr {
+      &.board-post {
+        td,
+        &.even td,
+        &.odd td {
+          background-color: rgba($orange-highlight, 0.5);
+        }
+      }
+
+      &.education {
+        td,
+        &.even td,
+        &.odd td {
+          background-color: rgba($green-highlight, 0.5);
+        }
+      }
+    }
+  }
+
+  .links {
+    padding-right: 10px;
+  }
+}
+
+.candidate {
+  &.grid {
+    tr {
+      &.editable {
+        td,
+        &.even td,
+        &.odd td {
+          background-color: rgba($orange-highlight, 0.5);
+        }
+      }
+    }
+  }
+}

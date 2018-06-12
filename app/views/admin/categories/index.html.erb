@@ -1,0 +1,24 @@
+<div class="headline">
+  <h1><%= title(t('.title')) %></h1>
+</div>
+
+<div class="col-md-2 col-sm-12 margin-bottom-20">
+  <%= link_to(t('.new_category'), new_admin_category_path, class: 'btn primary') %>
+</div>
+
+<div class="col-md-10 col-sm-12">
+  <table class="table table-bordered table-striped">
+    <tr>
+      <td><b><%= Category.human_attribute_name(:title) %></b></td>
+      <td><b><%= Category.human_attribute_name(:slug) %></b></td>
+      <td><b><%= Category.human_attribute_name(:use_case) %></b></td>
+    </tr>
+    <% @categories.each do |category| %>
+      <tr>
+        <td><%= link_to(category, edit_admin_category_path(category)) %></td>
+        <td><%= category.slug %></td>
+        <td><%= category_use_case(category.use_case) %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>

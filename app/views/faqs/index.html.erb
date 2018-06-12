@@ -1,0 +1,41 @@
+<% description(t('.description')) %>
+
+<div class="headline">
+  <h1><%= title(t('.title')) %></h1>
+</div>
+
+<div class="col-md-2 col-sm-12">
+  <%= link_to(t('.ask_question'), new_faq_path, class: 'btn primary') %>
+  <% if can_administrate?(:index, Faq) %>
+    <%= link_to(t('.administrate'), admin_faqs_path, class: 'btn secondary') %>
+  <% end %>
+</div>
+
+<div class="col-md-10 col-sm-12">
+  <div class="panel-group acc-v1 margin-bottom-40" id="answered">
+    <% @first = true %>
+    <% @faqs.each do |faq| %>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <div id="faq123">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#answered" href="#<%= dom_id(faq) %>">
+                <%= faq.question %>
+              </a>
+            </div>
+          </h4>
+        </div>
+        <div id="<%= dom_id(faq) %>" class="panel-collapse collapse <%= @first ? 'in' : '' %>">
+          <div class="panel-body">
+            <%= markdown(faq.answer) %>
+            <% if can_administrate?(:edit, faq) %>
+              <%= link_to(t('.edit_question'), edit_admin_faq_path(faq), class: 'btn primary pull-right') %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+      <% @first = false %>
+    <% end %>
+  </div>
+</div>
+

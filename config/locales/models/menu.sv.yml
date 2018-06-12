@@ -1,0 +1,20 @@
+sv:
+  activerecord:
+    models:
+      menu:
+        one: Meny
+        other: Menyer
+    attributes:
+      menu:
+        main_menu_id: Huvudmeny
+        index: Sorteringsindex
+        link: Länk
+        name: Namn
+        name_sv: Namn - svensk
+        name_en: Namn - engelsk
+        visible: Synlig
+        turbolinks: Turbolink
+        blank_p: Öppna i ny flik
+        updated_at: Uppdaterades
+        column: Kolumn (1-4)
+        header: Rubrik

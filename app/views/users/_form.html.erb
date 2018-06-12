@@ -1,0 +1,41 @@
+<%= simple_form_for(user, url: own_user_path) do |f| %>
+  <div class="headline">
+    <h3><%= t('.title') %></h3>
+  </div>
+  <%= f.input :firstname, autofocus: true, wrapper_html: {class: 'inline half'} %>
+  <%= f.input :lastname, wrapper_html: {class: 'inline half'} %>
+  <%= f.input :program, collection: user_program_collection,
+                        input_html: {class: 'select2'} %>
+  <%= f.input :start_year, collection: (1954..(Time.zone.now.year + 1)).to_a.reverse!,
+                           input_html: {class: 'select2'} %>
+  <div class="input-group margin-bottom-20">
+    <% if user.thumb_avatar %>
+      <%= image_tag(user.thumb_avatar, class: 'img responsive', height: '200px')%><br>
+      <br>
+      <%= link_to(t('.remove_avatar'), own_user_path(user: {remove_avatar: '1'}),
+                                       method: :patch,
+                                       data: {confirm: t('.confirm_avatar_removal')},
+                                       class: 'btn secondary') %>
+    <% end %>
+  </div>
+      <%= f.input :avatar, as: :file %>
+  <hr>
+  <%= simple_format(t('.protected_fields')) %>
+  <%= simple_format(t('.protected_fields_can_be_seen_by')) %>
+  <%= f.input :student_id, hint: t('.student_id_hint') %>
+  <%= f.input :phone %>
+  <%= f.input :display_phone %>
+  <%= f.input :food_preferences, collection: food_prefs_collection(user),
+                                 input_html: {class: 'select2', multiple: true} %>
+  <%= f.input :food_custom, hint: t('.food_preference_hint') %>
+  <hr>
+  <%= simple_format(t('.notification_settings')) %>
+  <div class="input-group margin-bottom-10">
+    <%= f.input :notify_event_users %>
+    <%= f.input :notify_messages %>
+    <%= f.input :notify_event_closing %>
+  </div>
+
+  <%= f.button :submit, id: 'user-info-submit' %>
+<% end %>
+

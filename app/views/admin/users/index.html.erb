@@ -1,0 +1,42 @@
+<div class="headline">
+  <h1><%= title(t('.title')) %></h1>
+</div>
+<div class="col-md-12 col-sm-12 margin-bottom-20">
+  <button class="wg-external-submit-button btn primary" data-grid-name="grid">
+    <%= t('wice_grid.filter') %>
+  </button>
+
+  <button class="wg-external-reset-button btn secondary" data-grid-name="grid">
+    <%= t('wice_grid.reset_filter') %>
+  </button>
+</div>
+
+<div class="col-md-12 col-sm-12 user">
+  <%= grid(@user_grid, hide_submit_button: true, hide_reset_button: true) do |g|
+    g.row_attributes do |user|
+      {id: dom_id(user)}
+    end
+    g.column(name: 'ID', attribute: 'id', filter: false) do |user|
+      link_to(user.id, edit_admin_user_path(user))
+    end
+    g.column(name: User.human_attribute_name(:firstname), attribute: 'firstname')
+    g.column(name: User.human_attribute_name(:lastname), attribute: 'lastname')
+    g.column(name: User.human_attribute_name(:email), attribute: 'email')
+    g.column(name: User.human_attribute_name(:confirmed_at), attribute: 'confirmed_at') do |user|
+      localized(user.confirmed_at)
+    end
+    g.column(name: User.human_attribute_name(:member_at), attribute: 'member_at',
+             class: 'member-confirmed') do |user|
+      localized(user.member_at)
+    end
+    g.column(name: t('.membership?'), filter: false, class: 'member-action') do |user|
+      if user.member?
+        link_to(t('.unmake_member'), unmember_admin_user_path(user),
+                    class: 'btn danger', remote: true, method: :post)
+      else
+        link_to(t('.make_member'), member_admin_user_path(user),
+                    class: 'btn secondary', remote: true, method: :post)
+      end
+    end
+  end -%>
+</div>

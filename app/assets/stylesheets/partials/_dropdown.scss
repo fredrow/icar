@@ -1,0 +1,37 @@
+.dropdown {
+  &.right {
+    .dropdown-menu {
+      left: auto;
+      right: 0;
+
+      .dropdown-submenu {
+        .dropdown-menu {
+          left: auto;
+          right: 100%;
+        }
+      }
+
+      .admin-menu-category {
+        display: inline;
+        float: left;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .dropdown.right .dropdown-menu .admin-menu-category {
+    display: block;
+    float: none;
+  }
+
+  .dropdown-menu {
+    left: 0 !important;
+    width: 100%;
+  }
+
+  .admin-menu-category li {
+    text-align: center;
+  }
+}

@@ -1,0 +1,19 @@
+<% description(truncate(markdown_plain(@blog_post.content), length: 160)) %>
+<% set_meta_tags(og: { type: 'article' }) %>
+<div class="blog">
+  <%= render(@blog_post, meta: true) %>
+
+  <div class="more-posts">
+    <div class="headline">
+      <h3><%= t('.more_posts') %></h3>
+    </div>
+    <% @other_blog_posts.each do |blog_post| %>
+      <div class="col-md-4 col-sm-12 col-xs-12 preview">
+        <%= render '/blog_posts/preview', blog_post: blog_post %>
+      </div>
+    <% end %>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <%= link_to(t('.all_blog_posts'), blog_posts_path, class: 'btn primary') %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+<%= simple_form_for([:admin, news]) do |f| %>
+  <%= f.input :title_sv %>
+  <%= f.input :content_sv, as: :pagedown, input_html: { preview: true, rows: 10 } %>
+  <%= f.input :title_en %>
+  <%= f.input :content_en, as: :pagedown, input_html: { preview: true, rows: 10 } %>
+  <%= f.input :pinned_from, as: :datetime_picker %>
+  <%= f.input :pinned_to, as: :datetime_picker %>
+
+  <% if news.image.present? %>
+    <%= image_tag(news.thumb) %>
+    <br>
+    <%= link_to(t('.remove_image'), admin_news_path(news, news: {remove_image: '1'}),
+                                    method: :patch,
+                                    data: {confirm: t('.confirm_image_removal')},
+                                    class: 'btn secondary') %>
+  <% else %>
+    <%= f.input :image, as: :file %>
+  <% end %>
+
+  <% if news.persisted? %>
+    <%= f.association :categories, collection: Category.by_title.for_use_case('News'),
+                                   input_html: { class: 'select2' } %>
+  <% else %>
+    <%= simple_format(t('.categories_after_save')) %>
+  <% end %>
+  <%= f.button :submit %>
+
+  <% if news.persisted? %>
+    <%= link_to(t('.destroy'), admin_news_path(news),
+                               method: :delete,
+                               class: 'btn danger pull-right') %>
+
+  <% end %>
+<% end %>

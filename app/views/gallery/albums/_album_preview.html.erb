@@ -1,0 +1,34 @@
+<% if album.images.any? %>
+  <% cache([album, album.images_count, I18n.locale]) do %>
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <%= link_to(gallery_album_path(album), data: { turbolinks: :false }) do %>
+        <div class="preview-wrap">
+          <div class="thumb">
+            <% sample = album.images.sample.try(:thumb) %>
+            <% if sample.present? %>
+              <%= image_tag(sample) %>
+            <% else %>
+              <%= image_tag('missing_thumb') %>
+            <% end %>
+          </div>
+          <div class="caption">
+            <h3 class="title">
+              <%= album.title %>
+            </h3>
+            <span class="date">
+              <%= fa_icon('calendar') %> <%= date_range(album.start_date, album.end_date) %>
+            </span>
+            <% if album.location.present? %>
+              <span class="location">
+                <%= fa_icon('map-marker') %> <%= album.location %>
+              </span>
+            <% end %>
+            <span class="image-count">
+              <%= fa_icon('image') %> <%= album.images.count %>
+            </span>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+<% end %>

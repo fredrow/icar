@@ -1,0 +1,14 @@
+<% description(t('.description')) %>
+<% keywords(t('.keywords')) %>
+
+<div class='headline'>
+  <h1 id='contacts_title'>
+    <%= title(t('.title')) %>
+  </h1>
+</div>
+
+<div class="contact row-eqh">
+  <% cache_unless(can_administrate?(:manage, Contact), [@contacts, I18n.locale]) do %>
+    <%= render @contacts %>
+  <% end %>
+</div>

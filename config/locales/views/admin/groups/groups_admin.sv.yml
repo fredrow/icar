@@ -1,0 +1,21 @@
+sv:
+  admin:
+    groups:
+      index:
+        title: Administrera grupper
+        new: Ny grupp
+        manage_faddrar: Välj faddrar/uppdragsfös
+        year: År
+        all_introductions: Alla nollningar
+
+      new:
+        title: Ny grupp
+        all_groups: Alla grupper
+
+      edit:
+        title: Redigera grupp
+        destroy: Förinta grupp
+        all_groups: Alla grupper
+
+      form:
+        number_hint: Endast för faddergrupper

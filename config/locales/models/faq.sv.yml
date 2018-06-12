@@ -1,0 +1,12 @@
+sv:
+  activerecord:
+    models:
+      faq:
+        one: FAQ-fråga
+        other: FAQ-frågor
+    attributes:
+      faq:
+        question: Fråga
+        answer: Svar
+        sorting_index: Sorteringsindex
+        category: Kategori

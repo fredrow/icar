@@ -1,0 +1,49 @@
+sv:
+  admin:
+    events:
+      edit:
+        all_events: Alla evenemang
+        show: Visa evenemang
+        title: Redigera evenemang
+        dates: Datum
+        signup: Anmälan
+        texts: Information
+
+      index:
+        calendar: Kalender
+        new_event: Nytt evenemang
+
+      new:
+        all_events: Alla evenemang
+        title: Nytt evenemang
+        dates: Datum
+        signup: Anmälan
+        texts: Information
+
+      dates_form:
+        categories_after_save: Kategorier kan läggas till efter att evenemanget sparas.
+        confirm_image_removal: Är du säker på att du vill ta bort bilden? Andra ändringar i formuläret sparas inte.
+        dot_hint: Prickar kommer ej att ändra någon tid, endast synas vid starttiden.
+        price_hint: Endast heltal. Anges alltid i SEK.
+        remove_image: Ta bort bild
+
+      sidebar:
+        all_events: Alla evenemang
+        attendees: Deltagare
+        calendar: Kalender
+        dates: Datum
+        destroy: Förinta evenemang
+        destroy_confirmation: Är du säker på att du vill förinta evenemanget?
+        index: Alla evenemang
+        new_event: Nytt evenemang
+        save_before: Osparade ändringar går förlorade.
+        settings: Inställningar
+        show_event: Visa evenemang
+        signup: Anmälan
+        texts: Information
+
+      event_error:
+        invalid_input_html: {
+          one: "<b>Ett obligatoriskt fält har ej fyllts i!</b> Sidomenyn indikerar under vilka flikar fälten finns.",
+          other: "<b>%{count} obligatoriska fält har ej fyllts i!</b> Sidomenyn indikerar under vilka flikar fälten finns."
+        }

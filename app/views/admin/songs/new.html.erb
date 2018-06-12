@@ -1,0 +1,9 @@
+<div class="col-md-10 col-md-offset-1 col-sm-12 reg-page">
+  <div class="headline">
+    <h3><%= title(t('.title')) %></h3>
+  </div>
+
+  <%= render('form', song: @song) %>
+  <hr>
+  <%= link_to(t('.all_songs'), admin_songs_path, class: 'btn secondary') %>
+</div>

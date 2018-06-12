@@ -1,0 +1,8 @@
+<div class="news start box">
+  <div class="headline">
+    <h3><%= election_view.election.to_s %></h3>
+  </div>
+    <%= render '/elections/countdown', election_view: election_view %>
+    <%= link_to t('.election_link'), elections_path %>
+    <br>
+</div>

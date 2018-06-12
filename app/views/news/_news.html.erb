@@ -1,0 +1,48 @@
+<% pinned |= false %>
+<div class="news start box">
+  <div class="headline">
+    <h3><%= news.title %></h3>
+
+    <% if pinned %>
+      <div class="pinned pull-right">
+        <%= fa_icon('thumb-tack lg') %>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="info">
+    <%= news_user(news) %>
+    <span class="date">
+      <%= l(news.created_at) %>
+    </span>
+  </div>
+
+  <div class="margin-bottom-20">
+    <%= markdown(news.content) %>
+  </div>
+
+  <% if news.image? %>
+    <div class="image margin-bottom-20">
+      <%= image_tag(news.image.large.url, class: 'img-responsive') %>
+    </div>
+  <% end %>
+
+<% cache([news.categories, I18n.locale]) do %>
+     <% if news.categories.any? %>
+       <span class="categories">
+         <%= fa_icon('hashtag') %>
+         <% news.categories.each do |cat| %>
+           <%= link_to(cat.title, news_index_path(category: cat.to_param)) %> <%= ' ' %>
+         <% end %>
+       </span>
+     <% end %>
+   <% end %>
+
+   <% if can_administrate?(:modify, news) %>
+     <span class="edit">
+       <%= link_to(edit_admin_news_path(news)) do %>
+         <%= fa_icon('cog') %> <%= t('global.edit') %>
+       <% end %>
+     </span>
+   <% end %>
+</div>

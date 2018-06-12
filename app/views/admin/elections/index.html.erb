@@ -1,0 +1,34 @@
+<div class="headline">
+  <h1><%= title(model_name(Election)) %></h1>
+</div>
+
+<div class="col-md-2 col-sm-12 margin-bottom-20">
+  <%= link_to(t('.new_election'), new_admin_election_path, class: 'btn primary') %>
+  <%= link_to(t('.show_election'), elections_path, class: 'btn secondary') %>
+</div>
+
+<div class="col-md-10 col-sm-12">
+  <%= grid(@grid, hide_submit_button: true, hide_reset_button: true) do |g|
+    g.column(name: Election.human_attribute_name(:title), filter: false) do |election|
+      election.title
+    end
+    g.column(name: Election.human_attribute_name(:url), attribute: 'url', filter: false)
+    g.column(name: Election.human_attribute_name(:open), attribute: 'open',
+             filter: false) do |election|
+      l(election.open)
+    end
+    g.column(name: Election.human_attribute_name(:updated_at), attribute: 'updated_at',
+             filter: false) do |election|
+      l(election.updated_at)
+    end
+    g.column(name: Election.human_attribute_name(:current_election)) do |election|
+      yes_no(election == Election.current)
+    end
+    g.column(name: Election.human_attribute_name(:semester)) do |election|
+      t("model.post.semester.#{election.semester}")
+    end
+    g.column(name: t('global.edit'), filter: false) do |election|
+      link_to(t('global.edit'), admin_election_path(election))
+    end
+  end -%>
+</div>

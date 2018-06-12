@@ -1,0 +1,2 @@
+$('#preview-rent').html("")
+$('#preview-rent').html("<%= escape_javascript( render '/rents/rent', rent: @rent)%>")

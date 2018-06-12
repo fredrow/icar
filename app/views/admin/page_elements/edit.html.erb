@@ -1,0 +1,28 @@
+<div class="col-md-8 col-sm-12">
+  <div class="headline">
+    <h1><%= title(t('.title')) %></h1>
+  </div>
+
+  <%= render 'form', page: @page, page_element: @page_element %>
+  <hr>
+
+  <div class="row">
+    <%= link_to(t('.new_element'), new_admin_page_page_element_path(@page),
+                                   class: 'btn secondary')%>
+    <%= link_to(t('.all_elements'), admin_page_page_elements_path(@page),
+                                    class: 'btn secondary')%>
+    <%= link_to(t('.edit_page'), edit_admin_page_path(@page),
+                                 class: 'btn secondary') %>
+    <%= link_to(t('.show_page'), page_path(@page),
+                                 class: 'btn secondary') %>
+  </div>
+
+  <% if @page_element.element_type == PageElement::IMAGE %>
+    <%= render 'image_preview', page: @page %>
+  <% end %>
+
+</div>
+
+<div class="col-md-4 col-sm-12">
+  <%= render 'index_preview', page: @page %>
+</div>

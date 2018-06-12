@@ -1,0 +1,17 @@
+<div class="headline">
+  <h1><%= title(t('.title')) %></h1>
+</div>
+
+<div class="col-md-2 col-sm-12">
+  <%= link_to(t('.new'), new_admin_song_path, class: 'btn primary') %>
+</div>
+
+<div class="col-md-10 col-sm-12">
+  <%= grid(@songs) do |g|
+    g.column(name: Song.human_attribute_name(:title), attribute: 'title') do |song|
+      link_to(song, edit_admin_song_path(song))
+    end
+    g.column(name: Song.human_attribute_name(:author), attribute: 'author')
+    g.column(name: Song.human_attribute_name(:category), attribute: 'category')
+  end -%>
+</div>

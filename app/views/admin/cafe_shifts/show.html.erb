@@ -1,0 +1,36 @@
+<div class="col-md-6 col-md-offset-3 col-sm-12">
+  <div class="headline">
+    <h1><%= title(%(#{CafeShift.model_name.human} - ID #{@cafe_view.shift.id})) %></h1>
+  </div>
+  <table class="table">
+    <tr>
+      <td><%= CafeShift.human_attribute_name(:start) %></td>
+      <td><%= time_range(@cafe_view.shift.start,
+                         @cafe_view.shift.stop,
+                         format: :long) %></td>
+    </tr>
+    <tr>
+      <td><%= CafeShift.human_attribute_name(:lv) %></td>
+      <td><%= @cafe_view.shift.lv %></td>
+    </tr>
+    <tr>
+      <td><%= CafeShift.human_attribute_name(:lp) %></td>
+      <td><%= @cafe_view.shift.lp %></td>
+    </tr>
+    <tr>
+      <td><%= CafeWorker.human_attribute_name(:user) %></td>
+      <td><%= user_link(@cafe_view.shift.user) %></td>
+    </tr>
+  </table>
+  <hr>
+  <%= render('admin/cafe_workers/form', cafe_view: @cafe_view) %>
+  <hr>
+  <%= link_to(t('.destroy'), admin_cafe_shift_path(@cafe_view.shift),
+                                      method: :delete,
+                                      class: 'btn danger pull-right') %>
+  <%= link_to(t('.administrate'), admin_cafe_shifts_path,
+                                     class: 'btn secondary') %>
+  <%= link_to(t('.edit'), edit_admin_cafe_shift_path(@cafe_view.shift),
+                                    class: 'btn secondary') %>
+  <%= link_to(t('.back_to_hilbert'), cafe_path, class: 'btn secondary') %>
+</div>
